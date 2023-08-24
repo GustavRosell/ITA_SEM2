@@ -3,17 +3,13 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ITA_sem2" expanded="True">
-            <Node name="modul_01">
-              <Node name="Dependencies" selected="True" />
-            </Node>
+          <Node name="ITA_sem2">
+            <Node name="modul1" selected="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="ITA_sem2" expanded="True" />
-        </State>
+        <State name="__root__" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
