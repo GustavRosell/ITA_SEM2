@@ -1,10 +1,10 @@
-﻿using System;
-namespace modul1;
+﻿using modul1;
+
 class Program
 {
     static void Main(string[] args)
     {
-        var opgave = new Opgave4();
+        var opgave = new opg_06();
         opgave.Run();
     }
 }
