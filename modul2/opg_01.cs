@@ -4,14 +4,14 @@ class opg_01
 {
     public void Run()
     {
-        int amount = 8; // Change this to the desired amount for testing
+        Console.WriteLine("Enter the amount: ");
+        int amount = Convert.ToInt32(Console.ReadLine());
         
         int stamps3 = Stamps3(amount);
         int stamps5 = Stamps5(amount);
 
-        Console.WriteLine($"Amount: {amount}");
-        Console.WriteLine($"3-cent stamps needed: {stamps3}");
-        Console.WriteLine($"5-cent stamps needed: {stamps5}");
+        Console.WriteLine($"\n3-cent stamps needed: {stamps3}");
+        Console.WriteLine($"\n5-cent stamps needed: {stamps5}");
     }
 
     // Calculate the number of 3-cent stamps needed to frank the given amount
