@@ -1,0 +1,14 @@
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.AssemblyInfoInputs.cache
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.AssemblyInfo.cs
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.csproj.CoreCompileInputs.cache
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\bin\Debug\net7.0\modul2.exe
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\bin\Debug\net7.0\modul2.deps.json
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\bin\Debug\net7.0\modul2.runtimeconfig.json
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\bin\Debug\net7.0\modul2.dll
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\bin\Debug\net7.0\modul2.pdb
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.dll
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\refint\modul2.dll
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.pdb
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\modul2.genruntimeconfig.cache
+C:\Users\Gusta\source\repos\ITA_SEM2\modul2\obj\Debug\net7.0\ref\modul2.dll
