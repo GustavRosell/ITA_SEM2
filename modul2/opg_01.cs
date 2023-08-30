@@ -4,7 +4,7 @@ class opg_01
 {
     public void Run()
     {
-        int amount = 7; // Change this to the desired amount for testing
+        int amount = 8; // Change this to the desired amount for testing
         
         int stamps3 = Stamps3(amount);
         int stamps5 = Stamps5(amount);
