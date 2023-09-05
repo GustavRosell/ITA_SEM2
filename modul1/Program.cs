@@ -4,5 +4,7 @@
     {
         var opgave = new opg_06();
         opgave.Run();
+
+        Console.ReadKey();
     }
 }

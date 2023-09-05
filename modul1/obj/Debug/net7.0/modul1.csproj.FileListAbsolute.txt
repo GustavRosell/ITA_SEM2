@@ -13,17 +13,3 @@
 /Users/rosell/Projects/ITA_SEM2/modul1/obj/Debug/net7.0/modul1.pdb
 /Users/rosell/Projects/ITA_SEM2/modul1/obj/Debug/net7.0/modul1.genruntimeconfig.cache
 /Users/rosell/Projects/ITA_SEM2/modul1/obj/Debug/net7.0/ref/modul1.dll
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\bin\Debug\net7.0\modul1.exe
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\bin\Debug\net7.0\modul1.deps.json
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\bin\Debug\net7.0\modul1.runtimeconfig.json
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\bin\Debug\net7.0\modul1.dll
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\bin\Debug\net7.0\modul1.pdb
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.AssemblyInfoInputs.cache
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.AssemblyInfo.cs
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.csproj.CoreCompileInputs.cache
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.dll
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\refint\modul1.dll
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.pdb
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\modul1.genruntimeconfig.cache
-C:\Users\Gusta\Source\Repos\ITA_SEM2\modul1\obj\Debug\net7.0\ref\modul1.dll
