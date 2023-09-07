@@ -1,11 +1,9 @@
-﻿
-public class opg_02
+﻿using System;
+
+public class opg_01
 {
     public void Run()
     {
 
-
-
     }
 }
-

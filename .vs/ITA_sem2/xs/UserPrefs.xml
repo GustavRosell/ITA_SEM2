@@ -1,12 +1,11 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{F1A4DCD8-E08B-4242-BE65-11A3F13EC871}|Default">
-  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{99EB54D5-E159-4D45-9C36-FECC7C7065CC}|Default">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.modul2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.modul3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="modul1/opg_06.cs">
     <Files>
       <File FileName="modul2/opg_01.cs" Line="1" Column="1" />
@@ -29,5 +28,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.modul4 FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
