@@ -3,28 +3,25 @@
   <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.modul2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.modul3 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modul1/opg_06.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="modul4/opg_01.cs">
     <Files>
-      <File FileName="modul2/opg_01.cs" Line="1" Column="1" />
-      <File FileName="modul1/opg_06.cs" Line="44" Column="33" />
-      <File FileName="modul1/Program.cs" Line="1" Column="1" />
+      <File FileName="modul4/opg_01.cs" Line="8" Column="6" />
+      <File FileName="modul2/Program.cs" Line="11" Column="2" NotebookId="1" />
+      <File FileName="modul3/Program.cs" Line="11" Column="2" NotebookId="1" />
+      <File FileName="modul4/Program.cs" Line="11" Column="2" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ITA_sem2" expanded="True">
-            <Node name="modul1" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="opg_06.cs" selected="True" />
-            </Node>
+          <Node name="ITA_sem2">
+            <Node name="modul3" expanded="True" />
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
