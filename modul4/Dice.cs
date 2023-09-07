@@ -14,12 +14,12 @@ public class Dice
     */
 
     // Fields:
-    private int size;
-    private int eyes;
-    private Random random;
+    public int size;
+    public int eyes;
+    public Random random;
 
     // Constructor:
-    public Dice(int size = 6)
+    public Dice(int size = 6 + 1)
     {
         this.size = size;
         random = new Random();
