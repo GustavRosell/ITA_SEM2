@@ -7,7 +7,8 @@ class Opg5_3
 {
     public static void FindMostFrequentWords()
     {
-        string filePath = Path.Combine("Opg5_3", "text.txt");
+        string fileName = "Gjoengehoevdingen";
+        string filePath = Path.Combine("Projects", "ITA_SEM2", "modul5_3", "Opg5_3", fileName);
 
         try
         {
@@ -17,7 +18,7 @@ class Opg5_3
             // Del teksten i ord
             string[] words = text.Split(new[] { ' ', '\t', '\n', '\r', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
-            // Liste til at holde styr på ordene og deres forekomster
+            // Liste til at holde styr pÃ¥ ordene og deres forekomster
             List<WordCount> wordCounts = new List<WordCount>();
 
             foreach (string word in words)
@@ -55,13 +56,5 @@ class Opg5_3
     {
         public string Word { get; set; }
         public int Count { get; set; }
-    }
-}
-
-class Program
-{
-    static void Main()
-    {
-        Opg5_3.FindMostFrequentWords();
     }
 }
