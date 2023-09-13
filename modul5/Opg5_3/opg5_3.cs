@@ -7,27 +7,29 @@ class Program
 {
     static void Main()
     {
-        string filePath = Path.Combine("Opg5_3", "text.txt");
+        Console.Write("Indtast stien til tekstfilen: ");
+        string filePath = Console.ReadLine();
 
         try
         {
             string[] lines = File.ReadAllLines(filePath);
             string text = string.Join(" ", lines);
 
-            // Del teksten i ord
+            // Del teksten i ord og fjern specialtegn
             string[] words = text.Split(new[] { ' ', '\t', '\n', '\r', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
-            // Tæl forekomster af hvert ord
+            // Tï¿½l forekomster af hvert ord
             Dictionary<string, int> wordCounts = new Dictionary<string, int>();
             foreach (string word in words)
             {
-                if (wordCounts.ContainsKey(word))
+                string cleanedWord = CleanWord(word);
+                if (wordCounts.ContainsKey(cleanedWord))
                 {
-                    wordCounts[word]++;
+                    wordCounts[cleanedWord]++;
                 }
                 else
                 {
-                    wordCounts[word] = 1;
+                    wordCounts[cleanedWord] = 1;
                 }
             }
 
