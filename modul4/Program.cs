@@ -5,13 +5,13 @@
 
         // Opgave 4.1
         Dice d = new Dice(); // Opretter almindelig terning
-        Console.WriteLine("\nhOpgave 4.1:\nNormal dice rolls:\n");
+        Console.WriteLine("\nOpgave 4.1:\nNormal dice rolls:\n");
 
         for (int i = 0; i < 10; i++)
         {
             d.Roll();
             int eyes = d.Eyes;
-            Console.WriteLine($"{eyes}");
+            Console.WriteLine($"{eyes}\n");
         }
 
         // Opgave 4.2
