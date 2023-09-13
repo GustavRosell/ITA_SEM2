@@ -1,24 +1,20 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{99EB54D5-E159-4D45-9C36-FECC7C7065CC}|Default">
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{99EB54D5-E159-4D45-9C36-FECC7C7065CC}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.modul2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.modul3 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modul4/opg_01.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="modul2/Program.cs">
     <Files>
-      <File FileName="modul4/opg_01.cs" Line="8" Column="6" />
-      <File FileName="modul2/Program.cs" Line="11" Column="2" NotebookId="1" />
-      <File FileName="modul3/Program.cs" Line="11" Column="2" NotebookId="1" />
-      <File FileName="modul4/Program.cs" Line="11" Column="2" NotebookId="1" />
+      <File FileName="modul2/Program.cs" Line="11" Column="2" />
+      <File FileName="modul3/Program.cs" />
+      <File FileName="modul4/Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ITA_sem2">
+            <Node name="modul2" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
             <Node name="modul3" expanded="True" />
           </Node>
         </State>
@@ -26,5 +22,11 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.modul4 FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.modul2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
