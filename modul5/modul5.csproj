@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DiceCup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DiceCup\" />
+  </ItemGroup>
 </Project>
