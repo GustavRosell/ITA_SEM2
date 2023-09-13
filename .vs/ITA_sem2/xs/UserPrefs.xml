@@ -1,7 +1,6 @@
-﻿<Properties StartupConfiguration="{99EB54D5-E159-4D45-9C36-FECC7C7065CC}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul3 PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{99EB54D5-E159-4D45-9C36-FECC7C7065CC}|Default">
+  <MonoDevelop.Ide.ItemProperties.modul5 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.modul4 FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="modul2/Program.cs">
     <Files>
       <File FileName="modul2/Program.cs" Line="11" Column="2" />
@@ -21,12 +20,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.modul4 FirstBuild="True" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.modul3 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
