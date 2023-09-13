@@ -19,22 +19,22 @@ class Opg5_3
             string[] words = text.Split(new[] { ' ', '\t', '\n', '\r', '.', ',', '!', '?', '"' }, StringSplitOptions.RemoveEmptyEntries);
 
             // Lav en liste til at holde styr på ordene og hvor mange gange de forekommer
-            List<WordCount> wordCounts = new List<WordCount>();
+            List<(string Word, int Count)> wordCounts = new List<(string Word, int Count)>();
 
             // Gennemgå hvert ord i teksten
             foreach (string word in words)
             {
                 // Tjek om ordet allerede er i listen
-                WordCount existingWord = wordCounts.FirstOrDefault(w => w.Word == word);
-                if (existingWord != null)
+                var existingWord = wordCounts.FirstOrDefault(w => w.Word == word);
+                if (existingWord != default)
                 {
-                    // Hvis ordet allerede er i listen, øg antallet af gange det er blevet set
-                    existingWord.Count++;
+                    // Hvis ordet allerede er i listen, opdater antallet af gange det er blevet set
+                    wordCounts[wordCounts.IndexOf(existingWord)] = (word, existingWord.Count + 1);
                 }
                 else
                 {
                     // Hvis ordet ikke er i listen, tilføj det til listen med antallet 1
-                    wordCounts.Add(new WordCount { Word = word, Count = 1 });
+                    wordCounts.Add((word, 1));
                 }
             }
 
@@ -54,12 +54,5 @@ class Opg5_3
             // Hvis der opstår en fejl, udskriv fejlmeddelelsen
             Console.WriteLine("Der opstod en fejl: " + e.Message);
         }
-    }
-
-    // Klasse til at gemme hvert ord og hvor mange gange de forekommer
-    class WordCount
-    {
-        public string Word { get; set; }
-        public int Count { get; set; }
     }
 }
