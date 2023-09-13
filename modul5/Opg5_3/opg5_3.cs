@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-class Program
+class opg5_3
 {
     static void Main()
     {
@@ -22,14 +22,13 @@ class Program
             Dictionary<string, int> wordCounts = new Dictionary<string, int>();
             foreach (string word in words)
             {
-                string cleanedWord = CleanWord(word);
-                if (wordCounts.ContainsKey(cleanedWord))
+                if (wordCounts.ContainsKey(word))
                 {
-                    wordCounts[cleanedWord]++;
+                    wordCounts[word]++;
                 }
                 else
                 {
-                    wordCounts[cleanedWord] = 1;
+                    wordCounts[word] = 1;
                 }
             }
 
