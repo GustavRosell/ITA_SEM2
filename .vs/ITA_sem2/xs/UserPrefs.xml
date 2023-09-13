@@ -1,27 +1,23 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{3CF8A23B-739F-4476-B937-9C7C34EBDF5D}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{46951634-C34B-4F47-88CB-CD362BD0A0E5}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.modul3 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul5__3 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.modul5__3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.modul4 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modul5/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="modul5_3/Program.cs">
     <Files>
-      <File FileName="modul5/Opg5_1.cs" Line="11" Column="21" />
-      <File FileName="modul5/Dice.cs" Line="21" Column="1" />
-      <File FileName="modul5/DiceCup.cs" Line="31" Column="2" />
-      <File FileName="modul5/DiceCupV2.cs" Line="44" Column="2" />
-      <File FileName="modul4/Dice.cs" Line="23" Column="6" />
-      <File FileName="modul4/LottoDice.cs" Line="27" Column="36" />
-      <File FileName="modul5/Program.cs" Line="14" Column="21" />
+      <File FileName="modul5_3/Program.cs" Line="7" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ITA_sem2" expanded="True">
+          <Node name="ITA_sem2">
             <Node name="modul2" expanded="True" />
-            <Node name="modul5" expanded="True">
-              <Node name="DiceCup" expanded="True" />
+            <Node name="modul5_3" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
