@@ -7,29 +7,27 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Indtast stien til tekstfilen: ");
-        string filePath = Console.ReadLine();
+        string filePath = Path.Combine("Opg5_3", "text.txt");
 
         try
         {
             string[] lines = File.ReadAllLines(filePath);
             string text = string.Join(" ", lines);
 
-            // Del teksten i ord og fjern specialtegn
+            // Del teksten i ord
             string[] words = text.Split(new[] { ' ', '\t', '\n', '\r', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
             // Tæl forekomster af hvert ord
             Dictionary<string, int> wordCounts = new Dictionary<string, int>();
             foreach (string word in words)
             {
-                string cleanedWord = CleanWord(word);
-                if (wordCounts.ContainsKey(cleanedWord))
+                if (wordCounts.ContainsKey(word))
                 {
-                    wordCounts[cleanedWord]++;
+                    wordCounts[word]++;
                 }
                 else
                 {
-                    wordCounts[cleanedWord] = 1;
+                    wordCounts[word] = 1;
                 }
             }
 
@@ -48,11 +46,5 @@ class Program
         {
             Console.WriteLine("Der opstod en fejl: " + e.Message);
         }
-    }
-
-    static string CleanWord(string word)
-    {
-        // Fjern specialtegn og konverter til små bogstaver
-        return new string(word.Where(c => char.IsLetter(c) || c == '\'').ToArray()).ToLower();
     }
 }
