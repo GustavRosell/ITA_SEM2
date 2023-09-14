@@ -4,12 +4,12 @@ class Opg5_3
 {
     public static void FindMostFrequentWords()
     {
-        string filePath = "/Users/rosell/Projects/ITA_SEM2/modul5_3/Gjoengehoevdingen";
+        string fileName = "/Users/rosell/Projects/ITA_SEM2/modul5_3/Gjoengehoevdingen";
 
         try
         {
             // Læs filen og gem indholdet som en tekst
-            string[] lines = File.ReadAllLines(filePath);
+            string[] lines = File.ReadAllLines(fileName);
             string text = string.Join(" ", lines);
 
             // Del teksten i ord
@@ -36,10 +36,9 @@ class Opg5_3
             }
 
             // Find de 10 mest hyppige ord
-            // var topWords = wordCounts.OrderByDescending(w => w.Count).Take(10);
 
             var topWords = new List<WordCount>();
-            
+
             for (int i = 0; i < 10; i++)
             {
                 WordCount maxCountWord = null;
@@ -58,6 +57,9 @@ class Opg5_3
                 // Fjern det mest gentagne ord fra wordCounts for at undgå gentagelse
                 wordCounts.Remove(maxCountWord);
             }
+
+            // Eller bare skriv:
+            // var topWords = wordCounts.OrderByDescending(w => w.Count).Take(10); 
 
             // Udskriv resultaterne
             Console.WriteLine("Opgave 5.3:\n");
