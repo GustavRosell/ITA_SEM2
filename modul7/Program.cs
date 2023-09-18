@@ -53,8 +53,6 @@
         return totalTax;
     }
 
-
-
     public static void Main(string[] args)
     {
         List<employee> employees = new List<employee>
@@ -97,6 +95,9 @@
                 monthsWorked = 3
             }
         };
+
+        employees.Sort();
+
 
         Console.WriteLine("Vil du udskrive lønsedler for alle (alle), fuldtidsansatte (fuldtid), deltidsansatte (deltid), eller konsulenter (konsulent)?");
         string choice = Console.ReadLine();
