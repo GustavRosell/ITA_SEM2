@@ -1,0 +1,32 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+@code {
+    private int currentCount = 0;
+
+    private int GenerateRandomValue()
+    {
+        return new Random().Next(0, currentCount + 1);
+    }
+
+    private string GetCounterColor()
+    {
+        return currentCount == 24 ? "red" : "black";
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+
+<p role="status">
+    Current count: <span style="color: @GetCounterColor()">@currentCount</span>
+    <br />
+    Random value: @GenerateRandomValue()
+</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>

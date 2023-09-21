@@ -1,0 +1,32 @@
+﻿/* Opgave 8.3 Besvar følgende spørgsmål:
+
+  1. Hvad er det som bestemmer layout for de enkelte pages?
+  - I Blazor bestemmes layoutet for de enkelte sider ved hjælp af Razor-filer.
+  Razor er en syntaks til at kombinere C# og HTML i samme fil.
+  Et layout i Blazor kan defineres ved hjælp af en Razor-fil,
+    f.eks. _Layout.cshtml eller _Imports.razor.
+  Denne fil specificerer det grundlæggende layout og den struktur,
+  der skal anvendes på tværs af flere sider i applikationen.
+
+  2. Hvad/hvor skal man ændre, hvis man vil have navigationspanelet over i højre side?
+  - Man kan flytte på <div class="sidebar"> elementet i MainLayout.razor
+  -- beskrevet yderligere i denne fil
+
+  3. Prøv at gøre dit browser vindue meget smalt. Hvad sker der?
+  - den tilpasser layouttet til browserens størrelse.
+
+  Hvor kommer den funktionalitet fra?
+  - f.eks. er der noget i NavMenu.razor.css filen;
+
+   .collapse {
+        /* Never collapse the sidebar for wide screens
+
+   .nav-scrollable {
+        /* Allow sidebar to scroll for tall menus
+
+
+  udover det, er der en masse @media queries og flexiblelayouttekniker i både MainLayout.css
+  og NavMenu.razor.css
+
+
+  */

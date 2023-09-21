@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{05D223EA-AD51-44C4-B6CA-CC76F0FE6CC9}|Default" GitUserInfo="UsingMD">
+﻿<Properties StartupConfiguration="{DB2E7667-A392-48EE-BC03-FD9709D64D94}|https" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul4 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -6,7 +6,9 @@
   <MonoDevelop.Ide.ItemProperties.modul5 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul7 PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.modul7__2 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.modul7__2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul8.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.modul8__3 FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.modul5__3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workbench ActiveDocument="modul6/Program.cs">
