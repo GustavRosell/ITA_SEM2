@@ -1,3 +1,9 @@
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.csproj.AssemblyReference.cache
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.AssemblyInfoInputs.cache
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.AssemblyInfo.cs
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.csproj.CoreCompileInputs.cache
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.MvcApplicationPartsAssemblyInfo.cache
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/bin/Debug/net7.0/wwwroot/_framework/dotnet.7.0.11.tuc2qcq9v6.js
@@ -608,12 +614,6 @@
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/bin/Debug/net7.0/icudt_no_CJK.dat
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/bin/Debug/net7.0/modul8.Shared.dll
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/bin/Debug/net7.0/modul8.Shared.pdb
-/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.csproj.AssemblyReference.cache
-/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.GeneratedMSBuildEditorConfig.editorconfig
-/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.AssemblyInfoInputs.cache
-/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.AssemblyInfo.cs
-/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.csproj.CoreCompileInputs.cache
-/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/modul8.Client.MvcApplicationPartsAssemblyInfo.cache
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/build-gz/x7nWoYI9.gz
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/build-gz/jKK6LXba.gz
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/build-gz/MWzleOjn.gz
@@ -825,6 +825,9 @@
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/staticwebassets.pack.json
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/staticwebassets.build.json
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/staticwebassets.development.json
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/scopedcss/Pages/ProductPage.razor.rz.scp.css
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/scopedcss/Pages/TicTacToe.razor.rz.scp.css
+/Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/scopedcss/Pages/Todo.razor.rz.scp.css
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/rosell/Projects/ITA_SEM2/modul8/Client/obj/Debug/net7.0/scopedcss/bundle/modul8.Client.styles.css

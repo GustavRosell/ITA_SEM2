@@ -1,5 +1,93 @@
 ﻿@page "/dicecup"
 
-<PageTitle>Dice Cup</PageTitle>
+<select @bind="selectedVersion">
+    <option value="1">Version 1</option>
+    <option value="2">Version 2</option>
+    <option value="3">Version 3</option>
+    <option value="4">Version 4</option>
+</select>
 
-<h1 class="DiceCup">NIY (Not Implemented Yet)</h1>
+@if (selectedVersion == "1")
+{
+    <!-- Version 1: To tal og en knap -->
+    <button @onclick="RollDices">Kast terninger</button>
+    <p>@string.Join(", ", currentValues)</p>
+}
+
+@if (selectedVersion == "2")
+{
+    <!-- Version 2: Vis øjnene som to terninger -->
+    <button @onclick="RollDices">Kast terninger</button>
+    @foreach (var value in currentValues)
+    {
+        <img src="@GetDiceImageSrc(value)" alt="Terning med værdi @value" width="50" height="50" />
+    }
+}
+
+@if (selectedVersion == "3")
+{
+    <!-- Version 3: Vælg antal terninger -->
+    <input type="number" min="1" max="6" @bind="numberOfDices" @bind:event="oninput" @onchange="UpdateDiceCount" />
+    <button @onclick="RollDices">Kast terninger</button>
+    @foreach (var value in currentValues)
+    {
+        <img src="@GetDiceImageSrc(value)" alt="Terning med værdi @value" width="50" height="50" />
+    }
+}
+
+@if (selectedVersion == "4")
+{
+    <!-- Version 4: Historik -->
+    <input type="number" min="1" max="6" @bind="numberOfDices" @bind:event="oninput" @onchange="UpdateDiceCount" />
+    <button @onclick="RollDices">Kast terninger</button>
+    @foreach (var value in currentValues)
+    {
+        <img src="@GetDiceImageSrc(value)" alt="Terning med værdi @value" width="50" height="50" />
+    }
+    <h3>Historik</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Tidspunkt</th>
+                <th>Øjne</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var entry in history)
+            {
+                <tr>
+                    <td>@entry.timestamp</td>
+                    <td>@string.Join(", ", entry.values)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private string selectedVersion = "1";
+    private int numberOfDices = 2;
+    private DiceCup diceCup = new DiceCup(2);
+    private List<int> currentValues = new List<int>();
+    private List<(DateTime timestamp, List<int> values)> history = new List<(DateTime, List<int>)>();
+
+    private void RollDices()
+    {
+        diceCup.Shake();
+        currentValues = diceCup.GetValues();
+        if (selectedVersion == "4")
+        {
+            history.Add((DateTime.Now, new List<int>(currentValues)));
+        }
+    }
+
+    private string GetDiceImageSrc(int value)
+    {
+        return $"./images/dice{value}.png";
+    }
+
+    private void UpdateDiceCount()
+    {
+        diceCup = new DiceCup(numberOfDices);
+    }
+}

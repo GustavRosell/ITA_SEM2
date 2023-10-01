@@ -10,26 +10,41 @@
   <MonoDevelop.Ide.ItemProperties.modul8.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.modul8__3 FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.modul5__3 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modul6/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="modul8/Client/wwwroot/css/app.css">
     <Files>
-      <File FileName="modul6/employee.cs" Line="36" Column="2" />
-      <File FileName="modul6/ftEmployee.cs" Line="11" Column="2" />
-      <File FileName="modul6/ptEmployee.cs" Line="21" Column="6" />
-      <File FileName="modul6/Consultant.cs" Line="18" Column="2" />
-      <File FileName="modul6/Program.cs" Line="21" Column="25" NotebookId="1" />
+      <File FileName="modul8/Client/Pages/Index.razor" Line="11" Column="20" />
+      <File FileName="modul8/Client/Pages/Index (copy).razor" Line="5" Column="20" />
+      <File FileName="modul8/Client/Pages/Counter.razor" Line="32" Column="76" />
+      <File FileName="modul8/Client/Pages/FetchData.razor" Line="1" Column="1" />
+      <File FileName="modul8/Client/Shared/SurveyPrompt.razor" Line="1" Column="1" />
+      <File FileName="modul8/Client/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="modul8/Client/Shared/MainLayout.razor.css" Line="27" Column="31" NotebookId="1" />
+      <File FileName="modul8/Client/Shared/NavMenu.razor" Line="1" Column="13" NotebookId="1" />
+      <File FileName="modul8/Client/Shared/NavMenu.razor.css" Line="18" Column="15" NotebookId="1" />
+      <File FileName="modul8/Client/Shared/MainLayout.razor" Line="20" Column="1" NotebookId="1" />
+      <File FileName="modul8/Client/wwwroot/css/app.css" Line="11" Column="9" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ITA_sem2" expanded="True">
-            <Node name="modul3" expanded="True" />
-            <Node name="modul4" expanded="True" />
-            <Node name="modul5" expanded="True">
-              <Node name="DiceCup" expanded="True" />
+          <Node name="ITA_sem2">
+            <Node name="modul8.Client">
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True">
+                <Node name="MainLayout.razor" expanded="True" />
+                <Node name="NavMenu.razor" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="app.css" selected="True" />
+                </Node>
+              </Node>
             </Node>
-            <Node name="modul5_3" expanded="True" />
-            <Node name="modul6" expanded="True" />
+            <Node name="modul8_3" expanded="True" />
           </Node>
         </State>
       </Pad>

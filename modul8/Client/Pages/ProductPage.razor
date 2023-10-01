@@ -1,0 +1,65 @@
+﻿@page "/productpage"
+
+<h3>Product Form</h3>
+
+<EditForm Model="@ProductModel" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <label for="name">Navn:</label>
+    <InputText id="name" @bind-Value="ProductModel.Name" />
+
+    <!-- Opgave 10.3: Dropdown menu (InputSelect) for produktets kategori -->
+    <label for="category">Kategori (Dropdown):</label>
+    <InputSelect id="category" @bind-Value="ProductModel.Category">
+        <option value="None">None</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </InputSelect>
+
+
+    <!-- Opgave 10.4: Radio buttons for produktets kategori -->
+    @*
+        <label>Kategori (Radio Buttons):</label>
+        <InputRadioGroup @bind-Value="ProductModel.Category">
+            <InputRadio Value="@("None")" /> None
+            <InputRadio Value="@("A")" /> A
+            <InputRadio Value="@("B")" /> B
+            <InputRadio Value="@("C")" /> C
+        </InputRadioGroup>
+    *@
+
+    <label for="price">Pris:</label>
+    <InputNumber id="price" @bind-Value="ProductModel.Price" />
+
+    <label for="date">Dato:</label>
+    <InputDate id="date" @bind-Value="ProductModel.PublishedDate" />
+
+    <button type="submit">Submit</button>
+</EditForm>
+
+<button @onclick="ClearProducts">Ryd produkter</button>
+
+<ol>
+    @foreach (var item in ProductList)
+    {
+        <li> <p>@item </p></li>
+    }
+</ol>
+
+@code {
+    private Product ProductModel = new Product();
+    private List<Product> ProductList = new List<Product>();
+
+    private void HandleValidSubmit()
+    {
+        ProductList.Add(ProductModel);
+        ProductModel = new Product(); // Reset the model for a new entry
+    }
+
+    private void ClearProducts()
+    {
+        ProductList.Clear();
+    }
+}

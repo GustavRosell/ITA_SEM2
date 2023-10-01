@@ -20,4 +20,26 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared\modul8.Shared.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\dice1.png" />
+    <Content Remove="wwwroot\dice2.png" />
+    <Content Remove="wwwroot\dice3.png" />
+    <Content Remove="wwwroot\dice4.png" />
+    <Content Remove="wwwroot\dice5.png" />
+    <Content Remove="wwwroot\dice6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\dice1.png" />
+    <None Include="wwwroot\dice2.png" />
+    <None Include="wwwroot\dice3.png" />
+    <None Include="wwwroot\dice4.png" />
+    <None Include="wwwroot\dice5.png" />
+    <None Include="wwwroot\dice6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>

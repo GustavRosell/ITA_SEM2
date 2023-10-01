@@ -1,6 +1,13 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
+
+    <!-- Placér denne for- eller bagved <main> elementet, for at flytte det -->
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+    <!-- Placér denne for- eller bagved <main> elementet, for at flytte det -->
+
     <main>
         <div class="top-row px-4">
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
@@ -10,11 +17,5 @@
             @Body
         </article>
     </main>
-
-    <!-- Placér denne for- eller bagved <main> elementet, for at flytte det -->
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-    <!-- Placér denne for- eller bagved <main> elementet, for at flytte det -->
 </div>
 

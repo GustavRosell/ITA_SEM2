@@ -44,6 +44,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/rosell/Projects/ITA_SEM2/modul8/Client/Pages/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2pu66fuwq9
+
+[/Users/rosell/Projects/ITA_SEM2/modul8/Client/Pages/TicTacToe.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGljVGFjVG9lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-yu3bauqn02
+
+[/Users/rosell/Projects/ITA_SEM2/modul8/Client/Pages/Todo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG9kby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-9yeh4whhl1
+
 [/Users/rosell/Projects/ITA_SEM2/modul8/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-y32pykmb20
