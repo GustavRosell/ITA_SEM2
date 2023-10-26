@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2g296R/SdYX245KhyTZbQsamzjFRWZWR/vAamVt8zVVza0w3+yyWiNXgGABTcGWdsvIlILciQUnf4pNsHKKw7g==",
+  "success": true,
+  "projectFilePath": "/Users/rosell/Projects/ITA_SEM2/modul08/Server/modul08.Server.csproj",
+  "expectedPackageFiles": [
+    "/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/7.0.13/microsoft.aspnetcore.components.webassembly.server.7.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

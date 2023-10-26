@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rosell/Projects/ITA_SEM2/modul7/modul7.csproj",
-      "projectName": "modul7",
-      "projectPath": "/Users/rosell/Projects/ITA_SEM2/modul7/modul7.csproj",
+      "projectUniqueName": "/Users/rosell/Projects/ITA_SEM2/modul7/modul07.csproj",
+      "projectName": "modul07",
+      "projectPath": "/Users/rosell/Projects/ITA_SEM2/modul7/modul07.csproj",
       "packagesPath": "/Users/rosell/.nuget/packages/",
       "outputPath": "/Users/rosell/Projects/ITA_SEM2/modul7/obj/",
       "projectStyle": "PackageReference",
