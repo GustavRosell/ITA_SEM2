@@ -1,17 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
-  <PropertyGroup>
+<PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+</PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' ">
+<PropertyGroup Condition="'$(RunConfiguration)' == 'https'">
     <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' ">
+</PropertyGroup>
+
+<PropertyGroup Condition="'$(RunConfiguration)' == 'http'">
     <ExternalConsole>true</ExternalConsole>
-  </PropertyGroup>
+</PropertyGroup>
   <ItemGroup>
     <Content Remove="wwwroot\dice1.png" />
     <Content Remove="wwwroot\dice2.png" />
@@ -41,9 +43,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.13" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Server\modul08.Server.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
     <ProjectReference Include="..\Shared\modul08.Shared.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>

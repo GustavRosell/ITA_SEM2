@@ -1,0 +1,305 @@
+/* /Pages/ProductPage.razor.rz.scp.css */
+body[b-zqn986v4uv] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Let grå baggrund for at give kontrast */
+}
+
+h3[b-zqn986v4uv] {
+    margin: 2rem 0; /* Ensartet margin omkring overskriften */
+}
+
+EditForm[b-zqn986v4uv] {
+    background-color: #ffffff; /* En lysere baggrundsfarve for formularen */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem 260px 2rem 260px; /* Ensartet margin omkring formularen */
+    max-width: 600px;
+}
+
+label[b-zqn986v4uv], InputText[b-zqn986v4uv], InputSelect[b-zqn986v4uv], InputNumber[b-zqn986v4uv], InputDate[b-zqn986v4uv] {
+    display: block;
+    width: 100%; /* Gør inputfelter fuld bredde af containeren */
+    margin: 1rem 0; /* Ensartet margin omkring labels og inputfelter */
+}
+
+button[type="submit"][b-zqn986v4uv], button[b-zqn986v4uv] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    display: block; /* Gør knapperne blokniveau */
+}
+
+    button[type="submit"]:hover[b-zqn986v4uv], button:hover[b-zqn986v4uv] {
+        background-color: #0056b3;
+    }
+
+    button[type="submit"]:active[b-zqn986v4uv], button:active[b-zqn986v4uv] {
+        background-color: #004499;
+    }
+
+ol[b-zqn986v4uv] {
+    margin-top: -30rem;
+    margin-right: 260px;
+    margin-bottom: 2rem;
+    margin-left: 300px;
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    padding-right: 5rem; /* Forøget højre padding */
+    border-radius: 10px;
+    max-width: 800px; /* Justere denne værdi for at øge bredden af boksen, hvis nødvendigt */
+}
+
+
+
+    ol li p[b-zqn986v4uv] {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+/* /Pages/TicTacToe.razor.rz.scp.css */
+/* Generelle styles for hele kryds-og-bolle brættet */
+/* Generelle styles for hele kryds-og-bolle brættet */
+table[b-pundxbyr43] {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td[b-pundxbyr43] {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 2px solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    /* Styles for X og O */
+    td:empty:hover[b-pundxbyr43] {
+        background-color: #f4f4f4;
+    }
+
+/* Highlighter vinderens markering */
+p[b-pundxbyr43] {
+    color: green;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+td[data-player="X"][b-pundxbyr43] {
+    color: red;
+}
+
+td[data-player="O"][b-pundxbyr43] {
+    color: blue;
+}
+
+p.winner[b-pundxbyr43] {
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+    background-color: green;
+    padding: 20px;
+    border: 5px solid gold;
+    border-radius: 10px;
+}
+/* /Pages/Todo.razor.rz.scp.css */
+h3[b-vbbtne6ytb] {
+    color: darkblue;
+    text-align: center;
+}
+
+.filter-section[b-vbbtne6ytb] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.add-todo-section[b-vbbtne6ytb] {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-table[b-vbbtne6ytb] {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .todo-table[b-vbbtne6ytb], .todo-table th[b-vbbtne6ytb], .todo-table td[b-vbbtne6ytb] {
+        border: 1px solid gray;
+    }
+
+        .todo-table th[b-vbbtne6ytb], .todo-table td[b-vbbtne6ytb] {
+            padding: 8px;
+            text-align: left;
+        }
+
+.priority-selector[b-vbbtne6ytb] {
+    margin: 0;
+}
+
+input[type="checkbox"][b-vbbtne6ytb] {
+    margin-right: 10px;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-ieemwqhyrp] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-ieemwqhyrp] {
+    flex: 1;
+}
+
+.sidebar[b-ieemwqhyrp] {
+    background-image: linear-gradient(180deg, rgb(255, 0, 0) 0%, #3a0647 70%);
+}
+
+.top-row[b-ieemwqhyrp] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-ieemwqhyrp]  a, .top-row[b-ieemwqhyrp]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-ieemwqhyrp]  a:hover, .top-row[b-ieemwqhyrp]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-ieemwqhyrp]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-ieemwqhyrp] {
+        display: none;
+    }
+
+    .top-row.auth[b-ieemwqhyrp] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-ieemwqhyrp]  a, .top-row[b-ieemwqhyrp]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-ieemwqhyrp] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-ieemwqhyrp] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-ieemwqhyrp] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-ieemwqhyrp]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-ieemwqhyrp], article[b-ieemwqhyrp] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-6ags5336io] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-6ags5336io] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-6ags5336io] {
+    font-size: 1.1rem;
+}
+
+.oi[b-6ags5336io] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-6ags5336io] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-6ags5336io] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-6ags5336io] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-6ags5336io]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-6ags5336io]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-6ags5336io]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-6ags5336io] {
+        display: none;
+    }
+
+    .collapse[b-6ags5336io] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-6ags5336io] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+

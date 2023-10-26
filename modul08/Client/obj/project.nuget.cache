@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CvcQKgMqjzx3lhOw4vt+SSFQMAJMfVaQqHqSFWnxEOdOnp0UxkWWPhs7Jf6YN2VtpboboyvtTqq+IBtbzYPTbg==",
+  "dgSpecHash": "eaBTByvrPPu0mDN28m3DVj9PK4msZM/GbZXa4BkYz64rtETTgo4ckCv08Ri+wKVeY8sce9SNTTM7EWHR0omJdQ==",
   "success": true,
   "projectFilePath": "/Users/rosell/Projects/ITA_SEM2/modul08/Client/modul08.Client.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,6 @@
     "/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.web/7.0.13/microsoft.aspnetcore.components.web.7.0.13.nupkg.sha512",
     "/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.webassembly/7.0.13/microsoft.aspnetcore.components.webassembly.7.0.13.nupkg.sha512",
     "/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/7.0.13/microsoft.aspnetcore.components.webassembly.devserver.7.0.13.nupkg.sha512",
-    "/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/7.0.13/microsoft.aspnetcore.components.webassembly.server.7.0.13.nupkg.sha512",
     "/Users/rosell/.nuget/packages/microsoft.aspnetcore.metadata/7.0.13/microsoft.aspnetcore.metadata.7.0.13.nupkg.sha512",
     "/Users/rosell/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/Users/rosell/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

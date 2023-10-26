@@ -13,6 +13,7 @@
     <SourceRoot Include="/Users/rosell/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer)' == '' ">/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.webassembly.devserver/7.0.13</PkgMicrosoft_AspNetCore_Components_WebAssembly_DevServer>
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">/Users/rosell/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/7.0.13</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
   </PropertyGroup>
 </Project>

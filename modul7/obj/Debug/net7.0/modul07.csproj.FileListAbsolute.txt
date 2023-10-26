@@ -1,0 +1,15 @@
+/Users/rosell/Projects/ITA_SEM2/modul7/bin/Debug/net7.0/modul07
+/Users/rosell/Projects/ITA_SEM2/modul7/bin/Debug/net7.0/modul07.deps.json
+/Users/rosell/Projects/ITA_SEM2/modul7/bin/Debug/net7.0/modul07.runtimeconfig.json
+/Users/rosell/Projects/ITA_SEM2/modul7/bin/Debug/net7.0/modul07.dll
+/Users/rosell/Projects/ITA_SEM2/modul7/bin/Debug/net7.0/modul07.pdb
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.csproj.AssemblyReference.cache
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.AssemblyInfoInputs.cache
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.AssemblyInfo.cs
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.csproj.CoreCompileInputs.cache
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.dll
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/refint/modul07.dll
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.pdb
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/modul07.genruntimeconfig.cache
+/Users/rosell/Projects/ITA_SEM2/modul7/obj/Debug/net7.0/ref/modul07.dll

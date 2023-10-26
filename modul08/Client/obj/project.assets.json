@@ -108,25 +108,6 @@
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.13": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
-        "build": {
-          "build/_._": {}
-        }
-      },
       "Microsoft.AspNetCore.Metadata/7.0.13": {
         "type": "package",
         "compile": {
@@ -495,27 +476,12 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "modul08.Server/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.13"
-        },
-        "compile": {
-          "bin/placeholder/modul08.Server.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/modul08.Server.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "modul08.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "modul08.Server": "1.0.0"
+          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.13",
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.13"
         },
         "compile": {
           "bin/placeholder/modul08.Shared.dll": {}
@@ -630,25 +596,6 @@
         "type": "package",
         "build": {
           "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets": {}
-        }
-      },
-      "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.13": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ],
-        "build": {
-          "build/_._": {}
         }
       },
       "Microsoft.AspNetCore.Metadata/7.0.13": {
@@ -1013,27 +960,12 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "modul08.Server/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.13"
-        },
-        "compile": {
-          "bin/placeholder/modul08.Server.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/modul08.Server.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "modul08.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "modul08.Server": "1.0.0"
+          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.13",
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.13"
         },
         "compile": {
           "bin/placeholder/modul08.Shared.dll": {}
@@ -1278,31 +1210,6 @@
         "tools/runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll",
         "tools/x64/aspnetcorev2_inprocess.dll",
         "tools/x86/aspnetcorev2_inprocess.dll"
-      ]
-    },
-    "Microsoft.AspNetCore.Components.WebAssembly.Server/7.0.13": {
-      "sha512": "gp8PFGsMmgbwHgtMXvjgMufJvSLYD9S914CejfliMjDXKXryvF4P1Qi3NL4aeQ+kDeV/W0nwIquivANeHC2/LQ==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.components.webassembly.server/7.0.13",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.txt",
-        "build/Microsoft.AspNetCore.Components.WebAssembly.Server.targets",
-        "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
-        "microsoft.aspnetcore.components.webassembly.server.7.0.13.nupkg.sha512",
-        "microsoft.aspnetcore.components.webassembly.server.nuspec",
-        "tools/BlazorDebugProxy/BrowserDebugHost.dll",
-        "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
-        "tools/BlazorDebugProxy/BrowserDebugProxy.dll",
-        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
-        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.dll",
-        "tools/BlazorDebugProxy/Newtonsoft.Json.dll"
       ]
     },
     "Microsoft.AspNetCore.Metadata/7.0.13": {
@@ -1914,11 +1821,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "modul08.Server/1.0.0": {
-      "type": "project",
-      "path": "../Server/modul08.Server.csproj",
-      "msbuildProject": "../Server/modul08.Server.csproj"
-    },
     "modul08.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/modul08.Shared.csproj",
@@ -1929,7 +1831,6 @@
     "net7.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.13",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.13",
-      "modul08.Server >= 1.0.0",
       "modul08.Shared >= 1.0.0"
     ]
   },
@@ -1958,9 +1859,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/rosell/Projects/ITA_SEM2/modul08/Server/modul08.Server.csproj": {
-              "projectPath": "/Users/rosell/Projects/ITA_SEM2/modul08/Server/modul08.Server.csproj"
-            },
             "/Users/rosell/Projects/ITA_SEM2/modul08/Shared/modul08.Shared.csproj": {
               "projectPath": "/Users/rosell/Projects/ITA_SEM2/modul08/Shared/modul08.Shared.csproj"
             }

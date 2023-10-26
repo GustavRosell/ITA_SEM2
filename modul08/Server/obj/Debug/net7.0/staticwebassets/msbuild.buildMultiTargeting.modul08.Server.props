@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/modul08.Server.props" />
+</Project>
