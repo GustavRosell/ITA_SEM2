@@ -14,25 +14,56 @@
 }
 else
 {
+
+    <button @onclick="ToggleTemperature">
+        Switch to @(showCelsius ? "Fahrenheit" : "Celsius")
+    </button>
+
+    // Opgave 7:
+    <button @onclick="IncreaseForecasts">5-mere</button>
+    <button @onclick="DecreaseForecasts">5-mindre</button>
+
+    // Opgave 8:
+    <h3>Select number of forecasts:</h3>
+    <InputNumber @bind-Value="forecastCount"></InputNumber>
+    <button @onclick="RefreshForecasts">Fetch Forecasts</button>
+
+    // Opgave 9:
+    <p>
+        Minimum Temperatur:
+        <InputNumber @bind-Value="minTemperature" />
+        Maximum Temperatur:
+        <InputNumber @bind-Value="maxTemperature" />
+        <button @onclick="FetchFilteredData">Filter</button>
+
+    </p>
+
     <table class="table">
         <thead>
             <tr>
                 <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
+                <th>Location</th> <!-- Tilføjet -->
+                <th>Temperature</th> <!-- Ændret fra 'Temp. (C)' -->
                 <th>Summary</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
+
+            @for (var i = 0; i < forecasts.Length; i++)
             {
-                <tr>
+                var forecast = forecasts[i];
+                var rowStyle = i % 2 == 0 ? "background-color: #f0f0f0;" : "";
+                var summaryColor = GetColorBasedOnSummary(forecast.Summary);
+                <tr style="@rowStyle">
                     <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                    <td>@forecast.Location</td>
+                    <td>
+                        @(showCelsius ? forecast.TemperatureC.ToString() : forecast.TemperatureF.ToString())
+                    </td>
+                    <td style="color: @summaryColor">@forecast.Summary</td>
                 </tr>
             }
+
         </tbody>
     </table>
 }
@@ -40,9 +71,82 @@ else
 @code {
     private WeatherForecast[]? forecasts;
 
+    // Opgave 9:
+    private int minTemperature = -20;  // default value
+    private int maxTemperature = 55;   // default value
+
+    private async Task FetchFilteredData()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>($"WeatherForecast?minTemp={minTemperature}&maxTemp={maxTemperature}&count={forecastCount}");
+    }
+
+
+    // Opgave 7: --> Ændret igen efter opgave 9
+    private int forecastCount = 10;
+
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        await FetchFilteredData();
+    }
+
+    private bool showCelsius = true;
+
+    private void ToggleTemperature()
+    {
+        showCelsius = !showCelsius;
+    }
+
+    private async Task IncreaseForecasts()
+    {
+        forecastCount += 5;
+        await RefreshForecasts();
+    }
+
+    private async Task DecreaseForecasts()
+    {
+        if (forecastCount > 5) // Dette sikrer, at du ikke går under 0
+        {
+            forecastCount -= 5;
+            await RefreshForecasts();
+        }
+    }
+
+    private async Task RefreshForecasts()
+    {
+        forecasts = null; // Dette vil vise "Loading..." mens nye data indlæses
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>($"WeatherForecast?count={forecastCount}");
+
+        StateHasChanged();  // Anmoder Blazor om at opdatere skærmen
+    }
+
+
+    // Denne kode vil 'fixe' 5mere/mindre knapperne, til at filtrere automatisk hvis ønsket
+
+    /**
+    private async Task RefreshForecasts()
+    {
+        forecasts = null; // Dette vil vise "Loading..." mens nye data indlæses
+        await FetchFilteredData();
+        StateHasChanged();  // Anmoder Blazor om at opdatere skærmen
+    }
+    */
+
+
+
+    // Opgave 5:
+    private string GetColorBasedOnSummary(string summary)
+    {
+        if (summary == "Freezing" || summary == "Cold")
+        {
+            return "blue";
+        }
+        else if (summary == "Hot" || summary == "Warm")
+        {
+            return "darkred";
+        }
+        else
+        {
+            return "green";
+        }
     }
 }
-

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VZabaJSn/shyrBi+V5zCBWRngAUhOVVj/qmB3fJZ+yJCD0E1tAZF0C48X/lSGdpC2fTaPNR0+behWoS1xyPLQw==",
+  "dgSpecHash": "vABdpIINr2My+82PpfFR7vVTzCWTnFa1h8gKFlwN+sDYlXcw9UtUdx5WjF3Arx+dZZQT/PBdErtYp4kZrl15tA==",
   "success": true,
   "projectFilePath": "/Users/rosell/Projects/ITA_SEM2/modul8/Client/modul8.Client.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "/Users/rosell/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
     "/Users/rosell/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/rosell/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
-    "/Users/rosell/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.11/microsoft.netcore.app.runtime.mono.browser-wasm.7.0.11.nupkg.sha512"
+    "/Users/rosell/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.13/microsoft.netcore.app.runtime.mono.browser-wasm.7.0.13.nupkg.sha512"
   ],
   "logs": []
 }

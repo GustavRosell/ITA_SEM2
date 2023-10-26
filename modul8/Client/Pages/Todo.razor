@@ -4,21 +4,66 @@
 
 <h3>ToDo</h3>
 
-<ul>
-    @foreach (var todo in todos)
-    {
-        <li>
-            <input type="checkbox" @bind="todo.IsDone" /> @todo.Title
-        </li>
-    }
-</ul>
+<!-- Filter -->
+<div class="filter-section">
+    <input type="checkbox" id="showOnlyCheckbox" @bind="showOnlyNotDone" />
+    <label for="showOnlyCheckbox">Fjern udførte</label>
+</div>
 
-<input @bind="newTodo" placeholder="Noget nyt at gøre..." />
-<button @onclick="AddTodo">Tilføj</button>
+<!-- Add New Todo -->
+<div class="add-todo-section">
+    <input @bind="newTodo" placeholder="Tilføj nu noget makker..." />
+    <InputSelect Value="@selectedPriority" ValueChanged="@((string value) => selectedPriority = value)" TValue="string" ValueExpression="@( () => selectedPriority)">
+
+        <option value="Middel">Middel</option>
+        <option value="Høj">Høj</option>
+        <option value="Lav">Lav</option>
+    </InputSelect>
+    <button @onclick="AddTodo">Tilføj</button>
+    <button @onclick="SortTodos">Sorter</button>
+</div>
+
+<!-- Todo List -->
+<table class="todo-table">
+    <thead>
+        <tr>
+            <th>Titel</th>
+            <th>Prioritet</th>
+            <th>Done</th>
+            <th>Slet</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var todo in todos)
+        {
+            if (showOnlyNotDone ? !todo.IsDone : true)
+            {
+                <tr style="background-color: @GetPriorityColor(todo.Priority)">
+                    <td>@todo.Title</td>
+                    <td>
+                        <select class="priority-selector" @bind="@todo.Priority">
+                            <option value="Middel">Middel</option>
+                            <option value="Høj">Høj</option>
+                            <option value="Lav">Lav</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="checkbox" @bind="todo.IsDone" />
+                    </td>
+                    <td>
+                        <button @onclick="(() => RemoveTodo(todo))">Slet</button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
 
 @code {
     private List<TodoItem> todos = new List<TodoItem>();
     private string newTodo = "";
+    private string selectedPriority = "Middel";  // Default prioritet
+    private bool showOnlyNotDone = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -33,10 +78,16 @@
     {
         if (!string.IsNullOrWhiteSpace(newTodo))
         {
-            todos.Add(new TodoItem { Title = newTodo });
+            todos.Add(new TodoItem { Title = newTodo, Priority = selectedPriority });
             newTodo = "";
             await SaveTodos();
         }
+    }
+
+    private async Task RemoveTodo(TodoItem itemToRemove)
+    {
+        todos.Remove(itemToRemove);
+        await SaveTodos();
     }
 
     private async Task SaveTodos()
@@ -45,9 +96,38 @@
         await JSRuntime.InvokeAsync<object>("saveToLocalStorage", "todos", serializedTodos);
     }
 
+    private void SortTodos()
+    {
+        todos = todos.OrderByDescending(t => GetPriorityValue(t.Priority)).ToList();
+        StateHasChanged();
+    }
+
+    private int GetPriorityValue(string priority)
+    {
+        return priority switch
+        {
+            "Høj" => 3,
+            "Middel" => 2,
+            "Lav" => 1,
+            _ => 0, // default
+        };
+    }
+
+    private string GetPriorityColor(string priority)
+    {
+        return priority switch
+        {
+            "Høj" => "red",
+            "Middel" => "yellow",
+            "Lav" => "green",
+            _ => "black", // default
+        };
+    }
+
     private class TodoItem
     {
         public string Title { get; set; }
         public bool IsDone { get; set; }
+        public string Priority { get; set; } = "Middel"; // Default prioritet
     }
 }

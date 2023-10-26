@@ -1,13 +1,37 @@
 ﻿h3 {
     color: darkblue;
+    text-align: center;
 }
 
-ul {
-    list-style-type: none;
+.filter-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-li {
-    margin-bottom: 10px;
+.add-todo-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .todo-table, .todo-table th, .todo-table td {
+        border: 1px solid gray;
+    }
+
+        .todo-table th, .todo-table td {
+            padding: 8px;
+            text-align: left;
+        }
+
+.priority-selector {
+    margin: 0;
 }
 
 input[type="checkbox"] {

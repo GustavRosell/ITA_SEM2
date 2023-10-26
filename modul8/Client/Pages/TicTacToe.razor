@@ -5,30 +5,51 @@
 <table>
     @for (int i = 0; i < 3; i++)
     {
+        int localRow = i;
         <tr>
             @for (int j = 0; j < 3; j++)
             {
-                <td @onclick="() => MarkCell(i, j)">
-                    @board[i, j]
+                int localCol = j;
+                <td @onclick="() => MarkCell(localRow, localCol)" data-player="@board[localRow,localCol]">
+                    @if (board[localRow, localCol] != CellContent.Empty)
+                    {
+                        @board[localRow, localCol]
+                    }
                 </td>
             }
         </tr>
     }
 </table>
 
-@if (!string.IsNullOrEmpty(winner))
+@if (winner.HasValue)
 {
-    <p>Vinderen er: @winner</p>
+    <p>Vinderen er: @winner.Value</p>
 }
 
 @code {
-    string[,] board = new string[3, 3];
-    string currentPlayer = "X";
-    string winner = "";
+    enum CellContent
+    {
+        Empty,
+        X,
+        O
+    }
+
+    CellContent[,] board = new CellContent[3, 3];
+    CellContent currentPlayer = CellContent.X;
+    CellContent? winner = null;
 
     void MarkCell(int row, int col)
     {
-        if (string.IsNullOrEmpty(board[row, col]) && string.IsNullOrEmpty(winner))
+        Console.WriteLine($"Row: {row}, Col: {col}"); // tester for at finde fejl
+
+        // Check for valid indices before proceeding
+        if (row < 0 || row >= 3 || col < 0 || col >= 3)
+        {
+            Console.WriteLine($"Invalid indices: Row: {row}, Col: {col}");
+            return; // Exit early if indices are out of bounds
+        }
+
+        if (board[row, col] == CellContent.Empty && winner == null)
         {
             board[row, col] = currentPlayer;
             if (IsWinner(row, col))
@@ -37,10 +58,12 @@
             }
             else
             {
-                currentPlayer = (currentPlayer == "X") ? "O" : "X";
+                currentPlayer = (currentPlayer == CellContent.X) ? CellContent.O : CellContent.X;
             }
         }
+        StateHasChanged();
     }
+
 
     bool IsWinner(int row, int col)
     {

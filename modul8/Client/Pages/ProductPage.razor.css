@@ -1,27 +1,28 @@
-﻿/* ProductPage.razor.css */
-body {
+﻿body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Let grå baggrund for at give kontrast */
 }
 
 h3 {
-    margin-top: 2rem; /* Added some space on top for clarity */
+    margin: 2rem 0; /* Ensartet margin omkring overskriften */
 }
 
 EditForm {
-    background-color: #f5f5f5;
+    background-color: #ffffff; /* En lysere baggrundsfarve for formularen */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 260px; /* Offset the space taken by the NavMenu */
-    max-width: 600px; /* Limit the width for better presentation */
+    margin: 2rem 260px 2rem 260px; /* Ensartet margin omkring formularen */
+    max-width: 600px;
 }
 
-label {
-    font-weight: bold;
-    margin-top: 1rem;
+label, InputText, InputSelect, InputNumber, InputDate {
+    display: block;
+    width: 100%; /* Gør inputfelter fuld bredde af containeren */
+    margin: 1rem 0; /* Ensartet margin omkring labels og inputfelter */
 }
 
-button[type="submit"] {
+button[type="submit"], button {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -31,24 +32,30 @@ button[type="submit"] {
     cursor: pointer;
     margin-top: 1rem;
     transition: background-color 0.3s;
+    display: block; /* Gør knapperne blokniveau */
 }
 
-    button[type="submit"]:hover {
+    button[type="submit"]:hover, button:hover {
         background-color: #0056b3;
     }
 
-    button[type="submit"]:active {
+    button[type="submit"]:active, button:active {
         background-color: #004499;
     }
 
 ol {
-    margin-top: 2rem;
+    margin-top: -30rem;
+    margin-right: 260px;
+    margin-bottom: 2rem;
+    margin-left: 300px;
     border: 1px solid #e0e0e0;
     padding: 1rem;
-    border-radius: 8px;
-    max-width: 600px; /* Limit the width for consistency */
-    margin-left: 260px; /* Offset the space taken by the NavMenu */
+    padding-right: 5rem; /* Forøget højre padding */
+    border-radius: 10px;
+    max-width: 800px; /* Justere denne værdi for at øge bredden af boksen, hvis nødvendigt */
 }
+
+
 
     ol li p {
         font-size: 0.9rem;

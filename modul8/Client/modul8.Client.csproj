@@ -33,7 +33,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\dice1.png" />
-    <None Include="wwwroot\dice2.png" />
+    <None Include="wwwroot\dice2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\dice3.png" />
     <None Include="wwwroot\dice4.png" />
     <None Include="wwwroot\dice5.png" />

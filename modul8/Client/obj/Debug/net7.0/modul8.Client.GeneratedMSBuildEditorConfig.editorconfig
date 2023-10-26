@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/rosell/Projects/ITA_SEM2/modul8/Client/Pages/JokePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSm9rZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rosell/Projects/ITA_SEM2/modul8/Client/Pages/ShoppingPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hvcHBpbmdQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/rosell/Projects/ITA_SEM2/modul8/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

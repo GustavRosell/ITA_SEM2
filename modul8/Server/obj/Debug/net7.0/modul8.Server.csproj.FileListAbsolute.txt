@@ -1,4 +1,5 @@
 /Users/rosell/Projects/ITA_SEM2/modul8/Server/bin/Debug/net7.0/modul8.Client.staticwebassets.runtime.json
+/Users/rosell/Projects/ITA_SEM2/modul8/Server/bin/Debug/net7.0/wwwroot/dice2.png
 /Users/rosell/Projects/ITA_SEM2/modul8/Server/bin/Debug/net7.0/appsettings.Development.json
 /Users/rosell/Projects/ITA_SEM2/modul8/Server/bin/Debug/net7.0/appsettings.json
 /Users/rosell/Projects/ITA_SEM2/modul8/Server/bin/Debug/net7.0/BlazorDebugProxy/BrowserDebugHost.dll

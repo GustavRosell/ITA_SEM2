@@ -16,4 +16,10 @@
     <ProjectReference Include="..\Client\modul8.Client.csproj" />
     <ProjectReference Include="..\Shared\modul8.Shared.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
 </Project>
