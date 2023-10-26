@@ -32,5 +32,13 @@ namespace modul8.Server.Controllers
         {
             mRepo.AddItem(product);
         }
+
+        // Opgave 3: Delete
+        [HttpDelete]
+        [Route("delete/{id}")]
+        public void DeleteItem(int id)
+        {
+            mRepo.DeleteById(id);
+        }
     }
 }

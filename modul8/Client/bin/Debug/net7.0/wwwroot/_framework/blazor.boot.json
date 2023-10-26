@@ -198,15 +198,15 @@
       "mscorlib.dll": "sha256-1LEP8nUca7i3KzI4Zu9AD7rJ8CadngV0YUKjoHGiFxA=",
       "netstandard.dll": "sha256-+zXQN9625IUa11YLU5hNoQ04oHjCwFIJAXc8vOEMniU=",
       "System.Private.CoreLib.dll": "sha256-oytzvvuRkpVGZxuLwt9SR8n1KJzGeYroKTHxk0oZvfI=",
-      "modul8.Shared.dll": "sha256-WJbMqZbAEBQlQj6iMbwwkDXSKHMmBTfNVZ+BSMvKotE=",
-      "modul8.Client.dll": "sha256-m+UdT+TcyK8oxsx1rV+Wjnqjq8qtS01prTY1Yf6T1CI="
+      "modul8.Shared.dll": "sha256-og0Wyexd68A22nr7dIdiNfT7EV8Jvk8YWW\/FYB8encU=",
+      "modul8.Client.dll": "sha256-8aYmh6\/hrC99OXQRK5Xhl4nYzUGzLBHV0KfKk\/DNK7M="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "modul8.Shared.pdb": "sha256-IV795OqJg3I6R\/bJB+UTMZZpJJCe8VQTVdSHf0mJExc=",
-      "modul8.Client.pdb": "sha256-7VK1ku\/DmJpNHp11tN47+zkFvz2fABNMLDlFzbsj3Xo="
+      "modul8.Shared.pdb": "sha256-qJPGSQs05kYoUsbEOy69IERxPkFKwI1R3hSFXrCw2d8=",
+      "modul8.Client.pdb": "sha256-8NihKGCgv4zIIYCiDEqXiYrCr58Mw1F69MLYmtafCfk="
     },
     "runtime": {
       "dotnet.7.0.13.qpw74k2rkg.js": "sha256-eRbsSkKiWKWKcMiqy13LuLSBIpzmn52qw\/6SX+1jNQ0=",

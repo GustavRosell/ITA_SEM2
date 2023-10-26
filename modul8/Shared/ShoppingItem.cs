@@ -14,5 +14,11 @@ namespace modul8.Shared
         public string Description { get; set; } = "";
 
         public bool Done { get; set; } = false;
+
+        // Opgave 1:
+        public string Shop { get; set; } = "";
+
+        // Opgave 3: tilføjer delete
+        public int Id { get; set; }
     }
 }

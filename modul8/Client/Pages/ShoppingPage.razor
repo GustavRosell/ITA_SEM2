@@ -9,7 +9,9 @@
             <th>Name</th>
             <th>Amount</th>
             <th>Price</th>
+            <th>Shop</th> <!-- Opgave 1: Ny kolonne Shop -->
             <th>Done</th>
+            <th>Delete</th> <!-- Opgave 3: Ny kolonne Delete-->
         </tr>
     </thead>
     <tbody>
@@ -19,11 +21,18 @@
                 <td>@item.Name</td>
                 <td>@item.Amount</td>
                 <td>@item.Price</td>
+                <td>@item.Shop</td> <!-- Opgave 1: Visning af Shop værdi -->
                 <td>@boolAsText(item.Done)</td>
+                <td>
+                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteShoppingItem(item)">X</button>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+<!-- Opgave 2: Tilføjer total pris -->
+<h3 class="mt-3">Total Price: @CalculateTotalPrice()</h3>
 
 <img src="busy.gif" style="display:@busyDisplayStyle" />
 
@@ -46,6 +55,10 @@
     <div class="col-md-12 mb-3">
         <label for="Description">Description</label>
         <InputTextArea id="Description" @bind-Value="shoppingItem.Description" class="form-control" />
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="Shop">Shop</label>
+        <InputText id="Shop" @bind-Value="shoppingItem.Shop" class="form-control" />
     </div>
     <div class="col-md-6 mb-3">
         <div class="form-check">
@@ -89,12 +102,14 @@
         shoppingItem = new(); // clear fields in form
     }
 
+    // Opgave 3: Tilføjet slet knap
     private async Task DeleteShoppingItem(ShoppingItem item)
-{
-        await Http.DeleteAsync($"api/shopping/delete{item}");
+    {
+        await Http.DeleteAsync($"api/shopping/delete/{item.Id}");
 
         shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
-}
+    }
+
 
     public string boolAsText(bool b)
     {
@@ -107,4 +122,12 @@
         shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
         busyDisplayStyle = "none"; // sluk busy
     }
+
+    // Opgave 2: Tilføjer total pris
+    public decimal CalculateTotalPrice()
+    {
+        if (shoppingList == null) return 0;
+        return shoppingList.Sum(item => item.Price * item.Amount);
+    }
+
 }
