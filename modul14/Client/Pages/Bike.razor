@@ -1,0 +1,59 @@
+﻿@page "/bike"
+@using modul14.Shared
+@inject HttpClient Http;
+
+<PageTitle>Bike</PageTitle>
+
+<h1>Bikes</h1>
+
+@if (bikes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+
+    <table class="table">
+
+        <tbody>
+            @foreach (var bike in bikes)
+            {
+                <tr class="bikeRow">
+                    <td>
+                        <h2>@bike.Brand - @bike.Model</h2>
+                        <!--<scan class="oi oi-circle-x" @onclick="() => DeleteBike(bike)"></scan> -->
+                        <button class="btn btn-primary" @onclick="() => DeleteBike(bike)">Delete</button><br />
+                        Price: @bike.Price kr.
+                    </td>
+                    <td><img class="bikeImg" src="@bike.ImageUrl" width="200px" /></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+}
+
+@code {
+
+    private BEBike[]? bikes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        bikes = await Http.GetFromJsonAsync<BEBike[]>("api/bike");
+
+    }
+
+    private async Task DeleteBike(BEBike bike)
+    {
+        await Http.DeleteAsync($"api/bike/{bike.Id}");
+
+        bikes = await Http.GetFromJsonAsync<BEBike[]>("api/bike");
+
+        StateHasChanged();
+    }
+
+}
+

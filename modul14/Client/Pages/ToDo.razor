@@ -1,0 +1,77 @@
+﻿@page "/todo"
+@inject Blazored.LocalStorage.ILocalStorageService localStore
+@using modul14.Client.Model
+
+<PageTitle>Todo</PageTitle>
+
+<h1>Todo  (not done: @todos.Count(todo => !todo.IsDone))</h1>
+
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>
+            <InputCheckbox @bind-Value="todo.IsDone"
+                           @bind-Value:after="() => onToDoChanged(todo)" />
+            <InputText @bind-Value="todo.Title" />
+            <svg xmlns="http://www.w3.org/2000/svg" @onclick="() => DeleteToDo(todo)" width="24" height="24" viewBox="0 0 8 8"><path fill="#900" d="M4 0C1.79 0 0 1.79 0 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zM2.5 1.78L4 3.28l1.5-1.5l.72.72L4.72 4l1.5 1.5l-.72.72L4 4.72l-1.5 1.5l-.72-.72L3.28 4l-1.5-1.5l.72-.72z" /></svg>
+            <!--<scan class="oi oi-circle-x" @onclick="() => DeleteToDo(todo)"></scan> -->
+        </li>
+    }
+</ul>
+
+<InputText placeholder="Something todo" @bind-Value="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
+<button @onclick="UpdateLocalStorage">Save</button>
+<button @onclick="ClearLocalStorage">Clear</button>
+
+
+@code {
+    private string? newTodo;
+
+    private List<ToDoItem> todos = new();
+
+    private const string todoKey = "todo";
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var x = await localStore.GetItemAsync<List<ToDoItem>>(todoKey);
+        if (x != null)
+            todos = x;
+    }
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new ToDoItem { Title = newTodo });
+            newTodo = string.Empty;
+        }
+    }
+
+    public async void UpdateLocalStorage()
+    {
+        Console.WriteLine("UpdateLocalStorage");
+        await localStore.SetItemAsync(todoKey, todos);
+    }
+
+    public async void ClearLocalStorage()
+    {
+        todos.Clear();
+        await localStore.RemoveItemAsync(todoKey);
+        await localStore.ClearAsync();
+    }
+
+    public void onToDoChanged(ToDoItem todo)
+    {
+        Console.WriteLine("onToDoChanged " + todo.Title);
+
+    }
+
+    private void DeleteToDo(ToDoItem todo)
+    {
+        todos.Remove(todo);
+    }
+
+
+}

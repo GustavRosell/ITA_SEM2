@@ -1,3 +1,4 @@
+/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/dotnet.7.0.13.qpw74k2rkg.js
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/dotnet.timezones.blat
@@ -33,6 +34,10 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.VisualBasic.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Win32.Primitives.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.Win32.Registry.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Client.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Client.pdb
+/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Shared.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Shared.pdb
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/mscorlib.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/netstandard.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.AppContext.dll
@@ -197,11 +202,6 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Xml.XPath.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Xml.XPath.XDocument.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/WindowsBase.dll
-/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/blazor.boot.json
-/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Client.dll
-/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Client.pdb
-/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Shared.dll
-/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/modul08.Shared.pdb
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Net.ServicePoint.dll.gz
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Reflection.Metadata.dll.gz
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Data.dll.gz
@@ -405,8 +405,8 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Xml.Serialization.dll.gz
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/System.Formats.Tar.dll.gz
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/_framework/Microsoft.CSharp.dll.gz
-/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/dice2.png
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/modul08.Client.staticwebassets.runtime.json
+/Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/wwwroot/dice2.png
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/modul08.Client.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/modul08.Client.pdb
 /Users/rosell/Projects/ITA_SEM2/modul08/Client/bin/Debug/net7.0/Microsoft.AspNetCore.Authorization.dll

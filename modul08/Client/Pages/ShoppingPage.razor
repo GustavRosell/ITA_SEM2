@@ -22,7 +22,7 @@
                 <td>@item.Amount</td>
                 <td>@item.Price</td>
                 <td>@item.Shop</td> <!-- Opgave 1: Visning af Shop værdi -->
-                <InputCheckbox id="Done" @bind-Value="item.Done" @onclick="() => UpdateShoppingItem(item)"/>
+                <InputCheckbox id="Done" @bind-Value="item.Done" @onclick="() => UpdateShoppingItem(item)" />
                 <td>
                     <button class="btn btn-danger btn-sm" @onclick="() => DeleteShoppingItem(item)">X</button>
                 </td>

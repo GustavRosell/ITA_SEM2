@@ -1,0 +1,127 @@
+﻿@page "/shopping"
+@using modul14.Shared;
+@inject HttpClient Http;
+
+<h1 class="mb-3 mt-3">Shopping List</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Done</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in shoppingList)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Amount</td>
+                <td>@item.Price</td>
+                <td>@boolAsText(item.Done)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<img src="busy.gif" style="display:@busyDisplayStyle"/>
+
+<h1 class="mb-3 mt-3">Add Shopping Item</h1>
+<EditForm EditContext="@aEditContext" class="row p-3" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="col-md-12 mb-3">
+        <label for="Name">Name</label>
+        <InputText id="Name" @bind-Value="shoppingItem.Name" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="Price">Price</label>
+        <InputNumber id="Price" @bind-Value="shoppingItem.Price" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="Amount">Amount</label>
+        <InputNumber id="Amount" @bind-Value="shoppingItem.Amount" class="form-control" />
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="Description">Description</label>
+        <InputTextArea id="Description" @bind-Value="shoppingItem.Description" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-check">
+            <InputCheckbox id="Done" @bind-Value="shoppingItem.Done" class="form-check-input" />
+            <label class="form-check-label" for="Done">
+                Is Done
+            </label>
+        </div>
+    </div>
+
+    <div class="col-12 mb-3">
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+</EditForm>
+
+
+@code {
+
+    private string busyDisplayStyle = "none";
+    private ShoppingItem shoppingItem = new ShoppingItem();
+
+    private ShoppingItem[]? shoppingList = new ShoppingItem[0];
+
+    private EditContext aEditContext;
+
+    protected override void OnInitialized() {
+        aEditContext = new EditContext(shoppingItem);
+    }
+
+    public async Task HandleValidSubmit() {
+        await AddShoppingItem();
+    }
+
+    private async Task AddShoppingItem() {
+        await Http.PostAsJsonAsync<ShoppingItem>("api/shopping/add", shoppingItem);
+        Console.WriteLine("Klient: add " + shoppingItem.Name + " " + shoppingItem.Price);
+        shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
+        shoppingItem = new(); // clear fields in form
+    }
+
+    public string boolAsText(bool b) {
+        return b ? "YES" : "NO";
+    }
+
+    protected override async Task OnInitializedAsync() {
+        busyDisplayStyle = "block"; // tænd busy
+        shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
+        busyDisplayStyle = "none"; // sluk busy
+    }
+
+
+    private async Task DeleteShoppingItem(ShoppingItem item) {
+
+        await Http.DeleteAsync($"api/shopping/delete/{item.Id}");
+
+        shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
+
+    }
+
+    private async Task UpdateShoppingItem(ShoppingItem item)
+    {
+        item.Done = !item.Done;
+        await Http.PutAsJsonAsync<ShoppingItem>($"api/shopping/update", item);
+
+        //shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
+
+        //StateHasChanged();
+
+    }
+
+    private decimal TotalPrice {
+        get {
+            if (shoppingList == null)
+                return 0;
+            return shoppingList.Select(item => item.Amount * item.Price).Sum();
+        }
+    }
+}
+
