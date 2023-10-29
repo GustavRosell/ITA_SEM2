@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{FDCAEF0E-AECD-484A-8F1B-0D9A2E3B59DD}|https" GitUserInfo="UsingMD">
+﻿<Properties StartupConfiguration="{11885AA7-B79F-47DB-AFF5-047210D6186D}|https" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.modul05__3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -7,32 +7,48 @@
     <String>modul 7_2/modul07_2.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.modul04 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul02 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modul08/Client/Pages/ShoppingPage.razor">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/HelloBlazor-bikes/HelloBlazor/Server/Repositories/BikeRepositorySQLite.cs">
     <Files>
       <File FileName="modul08/Server/Controllers/ShoppingController.cs" />
-      <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.310/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" Line="448" Column="5" />
+      <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.310/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" />
       <File FileName="modul08/Client/Program.cs" />
       <File FileName="modul08/Client/App.razor" />
       <File FileName="modul08/Client/_Imports.razor" />
-      <File FileName="modul08/Server/Repositories/ShoppingRepositoryInMemory.cs" Line="1" Column="1" />
-      <File FileName="modul08/Client/Pages/FetchData.razor" Line="2" Column="15" />
-      <File FileName="modul08/Client/Pages/Todo.razor" Line="129" Column="23" />
-      <File FileName="modul08/Shared/ShoppingItem.cs" Line="1" Column="1" />
-      <File FileName="modul08/Shared/WeatherForecast.cs" Line="6" Column="1" />
+      <File FileName="modul08/Server/Repositories/ShoppingRepositoryInMemory.cs" />
+      <File FileName="modul08/Client/Pages/FetchData.razor" />
+      <File FileName="modul08/Client/Pages/Todo.razor" />
+      <File FileName="modul08/Shared/ShoppingItem.cs" />
+      <File FileName="modul08/Shared/WeatherForecast.cs" />
       <File FileName="modul08/Client/Pages/ShoppingPage.razor" Line="50" Column="11" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Client/Program.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Client/App.razor" Line="1" Column="1" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Client/_Imports.razor" Line="1" Column="1" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Client/Shared/NavMenu.razor.css" Line="1" Column="1" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Client/Shared/NavMenu.razor" Line="12" Column="36" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Client/Shared/MainLayout.razor" Line="1" Column="1" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Server/Repositories/BikeRepositoryInMemory.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/HelloBlazor-bikes/HelloBlazor/Server/Repositories/BikeRepositorySQLite.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ITA_sem2" expanded="True">
-            <Node name="modul14" expanded="True">
+          <Node name="ITA_sem2">
+            <Node name="HelloBlazor.Client" expanded="True">
+              <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True" />
-              <Node name="Properties" expanded="True" />
               <Node name="wwwroot" expanded="True" />
             </Node>
+            <Node name="HelloBlazor.Server" expanded="True">
+              <Node name="Repositories" expanded="True">
+                <Node name="BikeRepositorySQLite.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="HelloBlazor.Shared" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -44,7 +60,7 @@
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.modul01 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul14 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.modul08.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.HelloBlazor.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.modul06 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
