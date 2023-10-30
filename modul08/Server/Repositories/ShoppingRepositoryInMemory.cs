@@ -43,9 +43,7 @@ namespace modul08.Server.Repositories
 
         public void UpdateItem(ShoppingItem item)
         {
-            DeleteById(item.Id);
-            mProducts.Add(item);
-           
+            mProducts.Find(x => x.Id == item.Id).Done = item.Done;
         }
     }
 }

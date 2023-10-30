@@ -37,7 +37,9 @@
 
 </table>
 
-<button class="btn btn-primary" @onclick="NavigateToAddItem">Add New Item</button>
+
+
+<button class="btn btn-secondary" @onclick="NavigateToAddItem">Add New Item</button>
 
 @code {
     private string busyDisplayStyle = "none";
@@ -59,6 +61,7 @@
     // Opgave 4: update
     private async Task UpdateShoppingItem(ShoppingItem item)
     {
+        item.Done = !item.Done;
         await Http.PutAsJsonAsync<ShoppingItem>("api/shopping/update/", item);
         shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
     }

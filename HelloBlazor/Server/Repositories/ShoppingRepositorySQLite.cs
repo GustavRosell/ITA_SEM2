@@ -16,7 +16,7 @@ namespace HelloBlazor.Server.Repositories
                 connection.Open();
                 var command = connection.CreateCommand();
 
-                command.CommandText = @"INSERT INTO shoppinglist (Name, Amount, Description) VALUES ($name, amount, Description)";
+                command.CommandText = @"INSERT INTO shoppingitem (Name, Amount, Description) VALUES ($name, $amount, $description)";
                 command.Parameters.AddWithValue("$name", item.Name);
                 command.Parameters.AddWithValue("$amount", item.Amount);
                 command.Parameters.AddWithValue("$description", item.Description);
@@ -32,7 +32,7 @@ namespace HelloBlazor.Server.Repositories
                 connection.Open();
 
                 var command = connection.CreateCommand();
-                command.CommandText = @"SELECT * FROM shoppinglist";
+                command.CommandText = @"SELECT * FROM shoppingitem";
 
                 using (var reader = command.ExecuteReader())
                 {
@@ -41,7 +41,7 @@ namespace HelloBlazor.Server.Repositories
                         var id = reader.GetInt32(0);
                         var name = reader.GetString(1);
                         var amount = reader.GetInt32(2);
-                        var description = reader.IsDBNull(3) ? null : reader.GetString(3);
+                        var description = reader.GetString(3);
 
                         ShoppingItem item = new ShoppingItem { Id = id, Name = name, Amount = amount, Description = description};
                         result.Add(item);
