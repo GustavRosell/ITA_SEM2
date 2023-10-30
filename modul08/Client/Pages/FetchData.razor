@@ -75,9 +75,21 @@ else
     private int minTemperature = -20;  // default value
     private int maxTemperature = 55;   // default value
 
+
+    // Tilføjet error handling; log errors til konsol
     private async Task FetchFilteredData()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>($"WeatherForecast?minTemp={minTemperature}&maxTemp={maxTemperature}&count={forecastCount}");
+        var response = await Http.GetAsync($"WeatherForecast?minTemp={minTemperature}&maxTemp={maxTemperature}&count={forecastCount}");
+
+        if (response.IsSuccessStatusCode)
+        {
+            forecasts = await response.Content.ReadFromJsonAsync<WeatherForecast[]>();
+        }
+        else
+        {
+            var errorContent = await response.Content.ReadAsStringAsync();
+            Console.WriteLine($"Error: {errorContent}");
+        }
     }
 
 
@@ -111,6 +123,7 @@ else
         }
     }
 
+    /*
     private async Task RefreshForecasts()
     {
         forecasts = null; // Dette vil vise "Loading..." mens nye data indlæses
@@ -118,18 +131,19 @@ else
 
         StateHasChanged();  // Anmoder Blazor om at opdatere skærmen
     }
+    */
 
 
     // Denne kode vil 'fixe' 5mere/mindre knapperne, til at filtrere automatisk hvis ønsket
 
-    /**
+    
     private async Task RefreshForecasts()
     {
         forecasts = null; // Dette vil vise "Loading..." mens nye data indlæses
         await FetchFilteredData();
         StateHasChanged();  // Anmoder Blazor om at opdatere skærmen
     }
-    */
+    
 
 
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pJ/jaYztQLywwkQUPuj/2Wdw2OWRuIUGkM+7diTPSqQ=",
+  "Hash": "OflNiGK3nYnO777diC2moqIYvKjTjlStn4Io4+Aqekk=",
   "Source": "modul08.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -6968,6 +6968,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/rosell/Projects/ITA_SEM2/modul08/Client/obj/Debug/net7.0/scopedcss/projectbundle/modul08.Client.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/rosell/Projects/ITA_SEM2/modul08/Client/wwwroot/busy.gif",
+      "SourceId": "modul08.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/rosell/Projects/ITA_SEM2/modul08/Client/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "busy.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/busy.gif"
     },
     {
       "Identity": "/Users/rosell/Projects/ITA_SEM2/modul08/Client/wwwroot/css/app.css",

@@ -1,0 +1,68 @@
+﻿@page "/shoppinglist"
+@using modul08.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h1 class="mb-3 mt-3">Shopping List</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Shop</th> <!-- Opgave 1: Ny kolonne Shop -->
+            <th>Done</th>
+            <th>Delete</th> <!-- Opgave 3: Ny kolonne Delete-->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in shoppingList)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Amount</td>
+                <td>@item.Price</td>
+                <td>@item.Shop</td> <!-- Opgave 1: Visning af Shop værdi -->
+                <InputCheckbox id="Done" @bind-Value="item.Done" @onclick="() => UpdateShoppingItem(item)" />
+                <td>
+                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteShoppingItem(item)">X</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-primary" @onclick="NavigateToAddItem">Add New Item</button>
+
+@code {
+    private string busyDisplayStyle = "none";
+    private ShoppingItem[] shoppingList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall") ?? Array.Empty<ShoppingItem>();
+    }
+
+    // Opgave 3: Tilføjet slet knap
+    private async Task DeleteShoppingItem(ShoppingItem item)
+    {
+        await Http.DeleteAsync($"api/shopping/delete/{item.Id}");
+
+        shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
+    }
+
+    // Opgave 4: update
+    private async Task UpdateShoppingItem(ShoppingItem item)
+    {
+        await Http.PutAsJsonAsync<ShoppingItem>("api/shopping/update/", item);
+        shoppingList = await Http.GetFromJsonAsync<ShoppingItem[]>("api/shopping/getall");
+    }
+
+    // Opgave 5: Navigér mellem pages
+    private void NavigateToAddItem()
+    {
+        NavigationManager.NavigateTo("/addshoppingitem");
+    }
+
+}

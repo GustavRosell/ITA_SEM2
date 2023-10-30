@@ -1,0 +1,67 @@
+﻿@page "/additem"
+@using modul08.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h1 class="mb-3 mt-3">Add Shopping Item</h1>
+
+<EditForm EditContext="@aEditContext" class="row p-3" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="col-md-12 mb-3">
+        <label for="Name">Name</label>
+        <InputText id="Name" @bind-Value="shoppingItem.Name" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="Price">Price</label>
+        <InputNumber id="Price" @bind-Value="shoppingItem.Price" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <label for="Amount">Amount</label>
+        <InputNumber id="Amount" @bind-Value="shoppingItem.Amount" class="form-control" />
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="Description">Description</label>
+        <InputTextArea id="Description" @bind-Value="shoppingItem.Description" class="form-control" />
+    </div>
+    <div class="col-md-12 mb-3">
+        <label for="Shop">Shop</label>
+        <InputText id="Shop" @bind-Value="shoppingItem.Shop" class="form-control" />
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-check">
+            <InputCheckbox id="Done" @bind-Value="shoppingItem.Done" class="form-check-input" />
+            <label class="form-check-label" for="Done">
+                Is Done
+            </label>
+        </div>
+    </div>
+
+    <div class="col-12 mb-3">
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+</EditForm>
+
+<button class="btn btn-secondary" @onclick="NavigateToList">Back to Shopping List</button>
+
+@code {
+    private ShoppingItem shoppingItem = new ShoppingItem();
+    private EditContext aEditContext;
+
+    protected override void OnInitialized()
+    {
+        aEditContext = new EditContext(shoppingItem);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        await Http.PostAsJsonAsync("api/shopping/add", shoppingItem);
+        shoppingItem = new ShoppingItem(); // Reset the form
+        NavigationManager.NavigateTo("/shoppinglist"); // Navigate to the shopping list
+    }
+
+    private void NavigateToList()
+    {
+        NavigationManager.NavigateTo("/shoppinglist");
+    }
+}

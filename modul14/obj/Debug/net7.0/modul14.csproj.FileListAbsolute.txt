@@ -1,6 +1,0 @@
-/Users/rosell/Projects/ITA_SEM2/modul14/obj/Debug/net7.0/modul14.csproj.AssemblyReference.cache
-/Users/rosell/Projects/ITA_SEM2/modul14/obj/Debug/net7.0/modul14.GeneratedMSBuildEditorConfig.editorconfig
-/Users/rosell/Projects/ITA_SEM2/modul14/obj/Debug/net7.0/modul14.AssemblyInfoInputs.cache
-/Users/rosell/Projects/ITA_SEM2/modul14/obj/Debug/net7.0/modul14.AssemblyInfo.cs
-/Users/rosell/Projects/ITA_SEM2/modul14/obj/Debug/net7.0/modul14.csproj.CoreCompileInputs.cache
-/Users/rosell/Projects/ITA_SEM2/modul14/obj/Debug/net7.0/modul14.MvcApplicationPartsAssemblyInfo.cache
