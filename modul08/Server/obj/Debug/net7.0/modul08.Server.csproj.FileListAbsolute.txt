@@ -1,3 +1,5 @@
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.staticwebassets.runtime.json
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/wwwroot/dice2.png
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/appsettings.Development.json
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/appsettings.json
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/BlazorDebugProxy/BrowserDebugHost.dll
@@ -8,6 +10,7 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/BlazorDebugProxy/Microsoft.CodeAnalysis.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/BlazorDebugProxy/Microsoft.CodeAnalysis.Scripting.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/BlazorDebugProxy/Newtonsoft.Json.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Server.staticwebassets.runtime.json
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Server
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Server.deps.json
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Server.runtimeconfig.json
@@ -25,8 +28,10 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/Microsoft.JSInterop.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/Microsoft.JSInterop.WebAssembly.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Shared.dll
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Shared.pdb
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.pdb
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.csproj.AssemblyReference.cache
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.GeneratedMSBuildEditorConfig.editorconfig
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.AssemblyInfoInputs.cache
@@ -49,8 +54,3 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.pdb
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.genruntimeconfig.cache
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/ref/modul08.Server.dll
-/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.staticwebassets.runtime.json
-/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/wwwroot/dice2.png
-/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Server.staticwebassets.runtime.json
-/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.dll
-/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.pdb

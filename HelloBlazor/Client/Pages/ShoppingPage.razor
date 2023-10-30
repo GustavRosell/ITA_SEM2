@@ -10,6 +10,7 @@
             <th>Amount</th>
             <th>Price</th>
             <th>Done</th>
+            <th>Delete</th> <!-- Opgave 3: Ny kolonne Delete-->
         </tr>
     </thead>
     <tbody>
@@ -19,7 +20,10 @@
                 <td>@item.Name</td>
                 <td>@item.Amount</td>
                 <td>@item.Price</td>
-                <td>@boolAsText(item.Done)</td>
+                <InputCheckbox id="Done" @bind-Value="item.Done" @onclick="() => UpdateShoppingItem(item)" />
+                <td>
+                    <button class="btn btn-danger btn-sm" @onclick="() => DeleteShoppingItem(item)">X</button>
+                </td>
             </tr>
         }
     </tbody>
