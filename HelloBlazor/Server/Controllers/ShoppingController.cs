@@ -9,7 +9,7 @@ using HelloBlazor.Server.Repositories;
 namespace HelloBla.Server.Controllers
 {
     [ApiController]
-    [Route("api/Shopping")]
+    [Route("api/shopping")]
     public class ShoppingController : ControllerBase
     {
         private IShoppingRepository mRepo;

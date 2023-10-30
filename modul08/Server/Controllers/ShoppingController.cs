@@ -9,7 +9,7 @@ using modul08.Shared;
 namespace modul08.Server.Controllers
 {
     [ApiController]
-    [Route("api/Shopping")]
+    [Route("api/shopping")]
     public class ShoppingController : ControllerBase
     {
         private IShoppingRepository mRepo;

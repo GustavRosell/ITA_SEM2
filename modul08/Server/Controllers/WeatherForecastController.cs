@@ -4,7 +4,7 @@ using modul08.Shared;
 namespace modul08.Server.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/vejr")]
 public class WeatherForecastController : ControllerBase
 {
 

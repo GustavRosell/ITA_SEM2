@@ -4,6 +4,89 @@
     "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Server/HelloBlazor.Server.csproj": {}
   },
   "projects": {
+    "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/HelloBlazor.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/HelloBlazor.Client.csproj",
+        "projectName": "HelloBlazor.Client",
+        "projectPath": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/HelloBlazor.Client.csproj",
+        "packagesPath": "/Users/rosell/.nuget/packages/",
+        "outputPath": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rosell/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Shared/HelloBlazor.Shared.csproj": {
+                "projectPath": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Shared/HelloBlazor.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.13, 7.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.310/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
     "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Server/HelloBlazor.Server.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,6 +110,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/HelloBlazor.Client.csproj": {
+                "projectPath": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/HelloBlazor.Client.csproj"
+              },
               "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Shared/HelloBlazor.Shared.csproj": {
                 "projectPath": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Shared/HelloBlazor.Shared.csproj"
               }

@@ -495,6 +495,21 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "modul08.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.13",
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.13",
+          "modul08.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/modul08.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modul08.Client.dll": {}
+        }
+      },
       "modul08.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1381,6 +1396,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "modul08.Client/1.0.0": {
+      "type": "project",
+      "path": "../Client/modul08.Client.csproj",
+      "msbuildProject": "../Client/modul08.Client.csproj"
+    },
     "modul08.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/modul08.Shared.csproj",
@@ -1390,6 +1410,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 7.0.13",
+      "modul08.Client >= 1.0.0",
       "modul08.Shared >= 1.0.0"
     ]
   },
@@ -1419,6 +1440,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/rosell/Projects/ITA_SEM2/modul08/Client/modul08.Client.csproj": {
+              "projectPath": "/Users/rosell/Projects/ITA_SEM2/modul08/Client/modul08.Client.csproj"
+            },
             "/Users/rosell/Projects/ITA_SEM2/modul08/Shared/modul08.Shared.csproj": {
               "projectPath": "/Users/rosell/Projects/ITA_SEM2/modul08/Shared/modul08.Shared.csproj"
             }

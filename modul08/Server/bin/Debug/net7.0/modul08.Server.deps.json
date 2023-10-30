@@ -9,6 +9,7 @@
       "modul08.Server/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "7.0.13",
+          "modul08.Client": "1.0.0",
           "modul08.Shared": "1.0.0"
         },
         "runtime": {
@@ -211,6 +212,16 @@
       "System.Text.Json/7.0.0": {
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
+        }
+      },
+      "modul08.Client/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "7.0.13",
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "7.0.13",
+          "modul08.Shared": "1.0.0"
+        },
+        "runtime": {
+          "modul08.Client.dll": {}
         }
       },
       "modul08.Shared/1.0.0": {
@@ -425,6 +436,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "modul08.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "modul08.Shared/1.0.0": {
       "type": "project",

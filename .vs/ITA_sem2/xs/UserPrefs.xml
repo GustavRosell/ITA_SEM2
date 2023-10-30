@@ -1,25 +1,23 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{492C9C96-FC38-4E70-A1AD-AEC3968A0E43}|http">
-  <MonoDevelop.Ide.ItemProperties.HelloBlazor.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.modul05 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul08.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{492C9C96-FC38-4E70-A1AD-AEC3968A0E43}|https" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.modul04 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul03 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul08.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.modul07 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul01 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modul08/Client/Pages/ShoppingList.razor">
+  <MonoDevelop.Ide.ItemProperties.modul05__3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul06 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="modul08/Client/Shared/NavMenu.razor">
     <Files>
       <File FileName="modul08/Shared/ShoppingItem.cs" Line="24" Column="2" />
-      <File FileName="modul08/Client/Pages/ShoppingPage.razor" Line="45" Column="6" />
-      <File FileName="modul08/Client/Pages/AddShoppingItem.razor" Line="54" Column="6" />
-      <File FileName="modul08/Client/Shared/NavMenu.razor" Line="64" Column="52" />
-      <File FileName="modul08/Client/Pages/ShoppingList.razor" Line="80" Column="5" NotebookId="1" />
+      <File FileName="modul08/Client/Pages/AddItem.razor" Line="68" Column="1" />
+      <File FileName="modul08/Client/Pages/FetchData.razor" Line="22" Column="17" />
+      <File FileName="modul08/Client/Shared/NavMenu.razor" Line="59" Column="57" />
+      <File FileName="modul08/Client/Pages/ShoppingList.razor" Line="1" Column="21" />
+      <File FileName="modul08/Client/Pages/ShoppingPage.razor" Line="21" Column="36" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ITA_sem2" expanded="True">
+          <Node name="ITA_sem2">
             <Node name="HelloBlazor.Client" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="Counter.razor" expanded="True" />
@@ -36,14 +34,13 @@
               <Node name="Repositories" expanded="True" />
             </Node>
             <Node name="HelloBlazor.Shared" expanded="True" />
-            <Node name="modul08.Client">
-              <Node name="Dependencies" expanded="True" />
+            <Node name="modul08.Client" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="ShoppingList.razor" selected="True" />
                 <Node name="TicTacToe.razor" expanded="True" />
                 <Node name="Todo.razor" expanded="True" />
               </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
@@ -59,17 +56,21 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.modul08.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.modul08.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.modul03 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul07 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.modul05__3 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.modul06 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <DisabledProjects>
     <String>modul 7_2/modul07_2.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.ItemProperties.modul02 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.modul01 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul05 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.HelloBlazor.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.HelloBlazor.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

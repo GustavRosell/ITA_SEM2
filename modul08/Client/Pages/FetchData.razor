@@ -79,7 +79,7 @@ else
     // Tilføjet error handling; log errors til konsol
     private async Task FetchFilteredData()
     {
-        var response = await Http.GetAsync($"WeatherForecast?minTemp={minTemperature}&maxTemp={maxTemperature}&count={forecastCount}");
+        var response = await Http.GetAsync($"api/vejr?minTemp={minTemperature}&maxTemp={maxTemperature}&count={forecastCount}");
 
         if (response.IsSuccessStatusCode)
         {

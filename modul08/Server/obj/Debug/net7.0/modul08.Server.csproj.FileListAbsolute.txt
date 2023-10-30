@@ -49,3 +49,8 @@
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.pdb
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/modul08.Server.genruntimeconfig.cache
 /Users/rosell/Projects/ITA_SEM2/modul08/Server/obj/Debug/net7.0/ref/modul08.Server.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.staticwebassets.runtime.json
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/wwwroot/dice2.png
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Server.staticwebassets.runtime.json
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.dll
+/Users/rosell/Projects/ITA_SEM2/modul08/Server/bin/Debug/net7.0/modul08.Client.pdb
