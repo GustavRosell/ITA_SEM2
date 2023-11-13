@@ -38,6 +38,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloBlazor.Server", "Hello
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloBlazor.Shared", "HelloBlazor\Shared\HelloBlazor.Shared.csproj", "{3CEBF03F-F3C9-457D-9ACB-C63569A9CEDE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul 14-15", "Modul 14-15", "{82197095-73B9-41D7-B088-2ED84059C001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modul 19", "Modul 19", "{A6079205-2685-4818-85AD-16CB6014C870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheltersApp.Client", "..\Mini-Projekt\SheltersApp\Client\SheltersApp.Client.csproj", "{69EC208F-27CA-4F63-874E-E66457D2FFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheltersApp.Server", "..\Mini-Projekt\SheltersApp\Server\SheltersApp.Server.csproj", "{B0FA5A99-7CDE-4E1D-A494-34598077DB2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SheltersApp.Shared", "..\Mini-Projekt\SheltersApp\Shared\SheltersApp.Shared.csproj", "{52C3F43D-D959-4A51-B834-83E1B5D573BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,11 +114,31 @@ Global
 		{3CEBF03F-F3C9-457D-9ACB-C63569A9CEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CEBF03F-F3C9-457D-9ACB-C63569A9CEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CEBF03F-F3C9-457D-9ACB-C63569A9CEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69EC208F-27CA-4F63-874E-E66457D2FFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EC208F-27CA-4F63-874E-E66457D2FFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EC208F-27CA-4F63-874E-E66457D2FFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EC208F-27CA-4F63-874E-E66457D2FFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FA5A99-7CDE-4E1D-A494-34598077DB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FA5A99-7CDE-4E1D-A494-34598077DB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FA5A99-7CDE-4E1D-A494-34598077DB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FA5A99-7CDE-4E1D-A494-34598077DB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C3F43D-D959-4A51-B834-83E1B5D573BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C3F43D-D959-4A51-B834-83E1B5D573BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C3F43D-D959-4A51-B834-83E1B5D573BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C3F43D-D959-4A51-B834-83E1B5D573BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B11166B7-E2A7-4FCE-9CA6-CF28619F949D}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CDB484D9-9A32-4607-AF2A-12F8BB52A6EA} = {82197095-73B9-41D7-B088-2ED84059C001}
+		{2EF4FF5E-27C8-470B-8C83-F852A5605D29} = {82197095-73B9-41D7-B088-2ED84059C001}
+		{3CEBF03F-F3C9-457D-9ACB-C63569A9CEDE} = {82197095-73B9-41D7-B088-2ED84059C001}
+		{69EC208F-27CA-4F63-874E-E66457D2FFE3} = {A6079205-2685-4818-85AD-16CB6014C870}
+		{B0FA5A99-7CDE-4E1D-A494-34598077DB2C} = {A6079205-2685-4818-85AD-16CB6014C870}
+		{52C3F43D-D959-4A51-B834-83E1B5D573BA} = {A6079205-2685-4818-85AD-16CB6014C870}
 	EndGlobalSection
 EndGlobal
