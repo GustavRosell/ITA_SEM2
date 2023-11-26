@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NCVVsZctBFdxq1s9aMonRB6zP5JSW/UePkIxwHMvOrzcR6G73P6rW5PLFF2k8de5oAEo2jccQzLcHtpAh/X5fw==",
+  "dgSpecHash": "iwylToThC27XccFLCTdeFBf4BQN19XL4l/HflCDDv5QzbjItoZn3g/zCH5fBlOy4zjLVCrsYfuofyJ1dXCypIw==",
   "success": true,
   "projectFilePath": "/Users/rosell/Projects/ITA_SEM2/HelloBlazor/Client/HelloBlazor.Client.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,7 @@
     "/Users/rosell/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
     "/Users/rosell/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/rosell/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
-    "/Users/rosell/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.13/microsoft.netcore.app.runtime.mono.browser-wasm.7.0.13.nupkg.sha512"
+    "/Users/rosell/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/7.0.14/microsoft.netcore.app.runtime.mono.browser-wasm.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,53 +1,26 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{2EF4FF5E-27C8-470B-8C83-F852A5605D29}|https">
-  <MonoDevelop.Ide.ItemProperties.modul07 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.modul06 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Modul_22014-15.HelloBlazor.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloBlazor/Server/Repositories/BikeRepositorySQLite.cs">
+﻿<Properties StartupConfiguration="{B0FA5A99-7CDE-4E1D-A494-34598077DB2C}|https" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Mini-Projekt/SheltersApp/Client/Pages/BookingListPage.razor">
     <Files>
-      <File FileName="HelloBlazor/Server/Repositories/ShoppingRepositoryInMemory.cs" />
-      <File FileName="HelloBlazor/Server/Repositories/IShoppingRepository.cs" />
-      <File FileName="HelloBlazor/Server/Repositories/IBikeRepository.cs" />
-      <File FileName="HelloBlazor/Server/Repositories/BikeRepositorySQLite.cs" Line="15" Column="1" />
-      <File FileName="HelloBlazor/Server/Repositories/BikeRepositoryInMemory.cs" />
-      <File FileName="HelloBlazor/Server/Repositories/ShoppingRepositorySQLite.cs" />
-      <File FileName="HelloBlazor/Server/Controllers/ShoppingController.cs" />
-      <File FileName="HelloBlazor/Client/Pages/ShoppingPage.razor" />
-      <File FileName="HelloBlazor/Client/Pages/AddBike.razor" />
-      <File FileName="HelloBlazor/Server/Controllers/BikeController.cs" />
+      <File FileName="../Mini-Projekt/SheltersApp/Client/Services/IShelterService.cs" />
+      <File FileName="../Mini-Projekt/SheltersApp/Server/Storage/Persistency.cs" Line="7" Column="14" />
+      <File FileName="../Mini-Projekt/SheltersApp/Client/Pages/BookingListPage.razor" Line="1" Column="1" />
+      <File FileName="../Mini-Projekt/SheltersApp/Client/Services/ShelterService.cs" Line="11" Column="6" NotebookId="1" />
+      <File FileName="../Mini-Projekt/SheltersApp/Client/Pages/SearchPage.razor" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ITA_sem2" expanded="True">
-            <Node name="HelloBlazor.Client" expanded="True">
-              <Node name="Model" expanded="True" />
-              <Node name="Pages" expanded="True" />
-            </Node>
-            <Node name="HelloBlazor.Server" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="BikeRepositorySQLite.cs" selected="True" />
+            <Node name="Modul 19" expanded="True">
+              <Node name="SheltersApp.Client" expanded="True">
+                <Node name="Pages" expanded="True">
+                  <Node name="BookingListPage.razor" selected="True" />
+                </Node>
+                <Node name="Services" expanded="True" />
               </Node>
-            </Node>
-            <Node name="HelloBlazor.Shared" expanded="True" />
-            <Node name="modul08.Client" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Pages" expanded="True" />
-            </Node>
-            <Node name="modul08.Server" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="modul08.Shared" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="SheltersApp.Server" expanded="True">
+                <Node name="Storage" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -55,21 +28,27 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.modul02 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul04 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.modul05__3 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul03 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Modul_22014-15.HelloBlazor.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.modul05 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.modul08.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.ItemProperties.modul01 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.modul08.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.modul06 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul05 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul08.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.modul1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul05__3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul04 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.modul01 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Modul_22014-15.HelloBlazor.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.modul07 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.modul02 PreferredExecutionTarget="MonoDevelop.Default" />
   <DisabledProjects>
     <String>modul 7_2/modul07_2.csproj</String>
   </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.modul__01 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Modul_22019.SheltersApp.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
